@@ -1,0 +1,8 @@
+{
+  "name": "v2-icons",
+  "styles": ["index.css"],
+  "images": [
+    "img/arrow-right-circle.svg",
+    "img/arrow-right-circle.png"
+  ]
+}
