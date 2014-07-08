@@ -54,3 +54,13 @@
 .svg .v2-icon--arrow-tick-green {
   background-image: url('img/green/tick.svg');
 }
+
+/* === Blue === */
+
+.v2-icon--info-circle-blue {
+  background-image: url('img/blue/info-circle.png');
+}
+
+.svg .v2-icon--info-circle-blue {
+  background-image: url('img/blue/info-circle.svg');
+}
