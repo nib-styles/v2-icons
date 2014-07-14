@@ -27,6 +27,14 @@
   background-image: url('img/white/arrow-right-circle.svg');
 }
 
+.v2-icon--info-circle-white {
+  background-image: url('img/white/info-circle.png');
+}
+
+.svg .v2-icon--info-circle-white {
+  background-image: url('img/white/info-circle.svg');
+}
+
 /* === Grey === */
 
 .v2-icon--arrow-tick-grey {
