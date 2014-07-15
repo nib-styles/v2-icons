@@ -72,3 +72,23 @@
 .svg .v2-icon--info-circle-blue {
   background-image: url('img/blue/info-circle.svg');
 }
+
+/* === Purple === */
+
+.v2-icon--alert-purple {
+  background-image: url('img/purple/alert.png');
+}
+
+.svg .v2-icon--alert-purple {
+  background-image: url('img/purple/alert.svg');
+}
+
+/* === Red === */
+
+.v2-icon--alert-red {
+  background-image: url('img/red/alert.png');
+}
+
+.svg .v2-icon--alert-red {
+  background-image: url('img/red/alert.svg');
+}
