@@ -24,5 +24,5 @@ Run the build script:
 
 ## Adding new icons
 
-Add your icon in the `images/` directory.
+Add `*.svg` icons to the `images/` directory.
 

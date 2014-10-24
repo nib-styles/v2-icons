@@ -48,14 +48,14 @@ gulp.task('build--fonts', function(cb) {
       ;
 
       //generate an icon listing from a template
-      gulp.src('templates/listing.ejs')
+      gulp.src('templates/example.ejs')
         .pipe(consolidate('ejs', {
           glyphs:     codepoints,
           fontName:   options.fontName,
           fontPath:   FONT_DIR,
           className:  CLASS_NAME
         }))
-        .pipe(rename('templates/listing.html'))
+        .pipe(rename('example/example.html'))
         .pipe(gulp.dest('.'))
       ;
 
