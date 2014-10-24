@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nib icons</title>
+    <link href="../index.css" rel="stylesheet">
+    <style>
+
+        .hlist {
+            margin: 0;
+            padding: 0;
+        }
+        .hlist li {
+            display: inline-block;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul class="hlist">
+    <% glyphs.sort(function(a, b) {
+        if(a.name < b.name) return -1;
+        if(a.name > b.name) return 1;
+        return 0;
+    }).forEach( function(glyph) { %>
+        <li class="icon">
+
+            <div class="icon__image">
+                <i class="<%= className %> <%= className %>--smaller <%= className %>--<%= glyph.name %>"></i>
+            </div>
+
+            <div class="icon__class">
+                <%= className %>--<%= glyph.name %>
+            </div>
+
+        </li>
+    <% }); %>
+    </ul>
+
+    <h2>Colors</h2>
+    <ul class="hlist">
+    <% ['lightgreen', 'darkgreen', 'lightgrey', 'darkgrey', 'white'].forEach(function(suffix) { %>
+        <li>
+            <i class="<%= className %> <%= className %>--ambulance <%= className %>--small <%= className %>--<%= suffix %>"></i>
+            <br/>
+            <%= className %>--<%= suffix %>
+        </li>
+    <% }); %>
+    </ul>
+
+    <h2>Sizing</h2>
+    <ul class="hlist">
+        <% ['smallest', 'small', 'medium', 'large', 'largest'].forEach(function(suffix) { %>
+        <li>
+            <i class="<%= className %> <%= className %>--ambulance <%= className %>--<%= suffix %>"></i>
+            <br/>
+            <%= className %>--<%= suffix %>
+        </li>
+        <% }); %>
+    </ul>
+
+    <h2>Rotation</h2>
+    <ul class="hlist">
+        <li>
+            <i class="<%= className %> <%= className %>--ambulance <%= className %>--small <%= className %>--small"></i>
+            <br/>
+        </li>
+        <% ['rotate-90', 'rotate-180', 'rotate-270'].forEach(function(suffix) { %>
+        <li>
+            <i class="<%= className %> <%= className %>--ambulance <%= className %>--small <%= className %>--<%= suffix %>"></i>
+            <br/>
+            <%= className %>--<%= suffix %>
+        </li>
+        <% }); %>
+    </ul>
+
+</body>
+</html>

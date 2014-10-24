@@ -31,6 +31,7 @@ gulp.task('build--fonts', function(cb) {
     .pipe(iconfont({
       fontName:         FONT_NAME,
       appendCodepoints: false,
+      normalize:        true,
       log:              false //replace with `function() {}` to disable logging
     }))
     .on('codepoints', function(codepoints, options) {

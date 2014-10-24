@@ -26,3 +26,8 @@ Run the build script:
 
 Add `*.svg` icons to the `images/` directory.
 
+### Icon Naming
+
+ - name after what the image is, not what the function is
+ - if icons are in a circle, add the suffix `-circle`
+ - if icons are white on black, add the suffix `-inverse`
