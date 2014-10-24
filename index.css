@@ -1,94 +1,96 @@
 
-.v2-icon {
-  display: inline-block;
-  vertical-align: text-bottom;
+/* === FONT FACE === */
+
+@font-face {
+    font-family: 'nibdings';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./fonts/nibdings.eot');
+    src:
+        url('./fonts/nibdings.eot?#iefix') format('eot'),
+        url('./fonts/nibdings.woff') format('woff'),
+        url('./fonts/nibdings.ttf') format('truetype'),
+        url('./fonts/nibdings.svg#nibdings') format('svg')
+    ;
+}
+
+
+/* === ICON === */
+
+.v2-icon:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 'nibdings';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* === ICON: SIZE === */
+
+/* TODO: USE EMs so icons scale if user agent font size larger than normal? */
+
+.v2-icon--smallest {
+    font-size: 16px;
 }
 
 .v2-icon--small {
-  width: 16px;
-  height: 16px;
+    font-size: 32px;
 }
 
-/* === White === */
-
-.v2-icon--arrow-tick-white {
-  background-image: url('img/white/tick.png');
+.v2-icon--medium {
+    font-size: 48px;
 }
 
-.svg .v2-icon--arrow-tick-white {
-  background-image: url('img/white/tick.svg');
+.v2-icon--large {
+    font-size: 64px;
 }
 
-.v2-icon--arrow-right-circle-white {
-  background-image: url('img/white/arrow-right-circle.png');
+.v2-icon--largest {
+    font-size: 128px;
 }
 
-.svg .v2-icon--arrow-right-circle-white {
-  background-image: url('img/white/arrow-right-circle.svg');
+/* === ICON: COLOUR === */
+
+.v2-icon--lightgreen {
+    color: #009623;
 }
 
-.v2-icon--info-circle-white {
-  background-image: url('img/white/info-circle.png');
+.v2-icon--darkgreen {
+    color: #0a6d12;
 }
 
-.svg .v2-icon--info-circle-white {
-  background-image: url('img/white/info-circle.svg');
+.v2-icon--lightgrey {
+    color: #b9b9b9;
 }
 
-/* === Grey === */
-
-.v2-icon--arrow-tick-grey {
-  background-image: url('img/grey/tick.png');
+.v2-icon--darkgrey {
+    color: #444;
 }
 
-.svg .v2-icon--arrow-tick-grey {
-  background-image: url('img/grey/tick.svg');
+.v2-icon--white {
+    color: #fff;
 }
 
-.v2-icon--remove-circle-grey {
-  background-image: url('img/grey/remove-circle.png');
+/* === ICON: GLYPH === */
+
+
+.v2-icon--cal:before {
+    content: "\E001"
 }
 
-.svg .v2-icon--remove-circle-grey {
-  background-image: url('img/grey/remove-circle.svg');
+.v2-icon--dave:before {
+    content: "\E002"
 }
 
-/* === Green === */
-
-.v2-icon--arrow-tick-green {
-  background-image: url('img/green/tick.png');
+.v2-icon--glyn:before {
+    content: "\E003"
 }
 
-.svg .v2-icon--arrow-tick-green {
-  background-image: url('img/green/tick.svg');
+.v2-icon--tim:before {
+    content: "\E004"
 }
 
-/* === Blue === */
-
-.v2-icon--info-circle-blue {
-  background-image: url('img/blue/info-circle.png');
-}
-
-.svg .v2-icon--info-circle-blue {
-  background-image: url('img/blue/info-circle.svg');
-}
-
-/* === Purple === */
-
-.v2-icon--alert-purple {
-  background-image: url('img/purple/alert.png');
-}
-
-.svg .v2-icon--alert-purple {
-  background-image: url('img/purple/alert.svg');
-}
-
-/* === Red === */
-
-.v2-icon--alert-red {
-  background-image: url('img/red/alert.png');
-}
-
-.svg .v2-icon--alert-red {
-  background-image: url('img/red/alert.svg');
+.v2-icon--yasmin:before {
+    content: "\E005"
 }

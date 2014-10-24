@@ -1,0 +1,17 @@
+<link href="../index.css" rel="stylesheet">
+
+<ul class="icon-list">
+<% glyphs.forEach( function(glyph) { %>
+    <li class="icon-list__item">
+
+        <div class="icon-list__image">
+            <i class="<%= className %> <%= className %>--smaller <%= className %>--<%= glyph.name %>"></i>
+        </div>
+
+        <div class="icon-list__class">
+            .<%= className %>--<%= glyph.name %>
+        </div>
+
+    </li>
+<% }); %>
+</ul>
