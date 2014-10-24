@@ -2,8 +2,7 @@
 
 Icons for nib pages.
 
-    <i class="v2-icon v2-icon--smaller v2-icon--arrow-right-circle-white"></i>
-
+    <i class="v2-icon v2-icon--small v2-icon--arrow v2-icon--lightgrey"></i>
 
 ## Build
 
