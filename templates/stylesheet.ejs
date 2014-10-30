@@ -1,0 +1,95 @@
+
+/* === FONT FACE === */
+
+@font-face {
+    font-family: '<%= fontName %>';
+    font-weight: normal;
+    font-style: normal;
+    src: url('<%= fontPath %>/<%= fontName %>.eot');
+    src:
+        url('<%= fontPath %>/<%= fontName %>.eot?#iefix') format('eot'),
+        url('<%= fontPath %>/<%= fontName %>.woff') format('woff'),
+        url('<%= fontPath %>/<%= fontName %>.ttf') format('truetype'),
+        url('<%= fontPath %>/<%= fontName %>.svg#<%= fontName %>') format('svg')
+    ;
+}
+
+
+/* === ICON === */
+
+.<%= className %>:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 '<%= fontName %>';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* === ICON: SIZE === */
+
+/* TODO: USE EMs so icons scale if user agent font size larger than normal? */
+
+.<%= className %>--smallest {
+    font-size: 16px;
+}
+
+.<%= className %>--small {
+    font-size: 32px;
+}
+
+.<%= className %>--medium {
+    font-size: 48px;
+}
+
+.<%= className %>--large {
+    font-size: 64px;
+}
+
+.<%= className %>--largest {
+    font-size: 128px;
+}
+
+/* === ICON: COLOUR === */
+
+.<%= className %>--lightgreen {
+    color: #009623;
+}
+
+.<%= className %>--darkgreen {
+    color: #0a6d12;
+}
+
+.<%= className %>--lightgrey {
+    color: #b9b9b9;
+}
+
+.<%= className %>--darkgrey {
+    color: #444;
+}
+
+.<%= className %>--white {
+    color: #fff;
+}
+
+/* === ICON: ROTATION === */
+
+.<%= className %>--rotate-90:before {
+    transform: rotate(90deg)
+}
+
+.<%= className %>--rotate-180:before {
+    transform: rotate(180deg)
+}
+
+.<%= className %>--rotate-270:before {
+    transform: rotate(270deg)
+}
+
+/* === ICON: GLYPH === */
+
+<% glyphs.forEach( function(glyph) { %>
+.<%= className %>--<%= glyph.name %>:before {
+    content: "\<%= glyph.codepoint.toString(16).toUpperCase() %>"
+}
+<% }); %>
