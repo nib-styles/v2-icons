@@ -32,6 +32,8 @@ gulp.task('build--fonts', function(cb) {
       fontName:         FONT_NAME,
       appendCodepoints: false,
       normalize:        true,
+      fontHeight:       64,   //all *.svgs must be 64
+      descent:          -12,  //some magic number to make the font offset==0
       log:              false //replace with `function() {}` to disable logging
     }))
     .on('codepoints', function(codepoints, options) {

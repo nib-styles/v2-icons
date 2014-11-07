@@ -23,7 +23,8 @@ Run the build script:
 
 ## Adding new icons
 
-Add `*.svg` icons to the `images/` directory.
+1. Create your `*.svg` on an artboard 64x64px in all black.
+2. Add your `*.svg` to the `images/` directory.
 
 ### Icon Naming
 
