@@ -9,7 +9,7 @@ var consolidate = require('gulp-consolidate');
 
 var
   SRC_DIR       = './images',
-  FONT_DIR      = './fonts',
+  FONT_DIR      = 'nib-styles-v2-fonts/fonts',
   FONT_NAME     = 'nibdings',
   CLASS_NAME    = 'v2-icon'
 ;
