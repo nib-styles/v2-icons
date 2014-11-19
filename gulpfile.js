@@ -15,7 +15,9 @@ var
 ;
 
 gulp.task('clean--stylesheet', function(cb) {
-  rimraf('index.css', cb);
+  rimraf('index.css', function(){
+    rimraf('index.scss', cb);
+  });
 });
 
 gulp.task('clean--fonts', function(cb) {
@@ -46,6 +48,8 @@ gulp.task('build--fonts', function(cb) {
           className:  CLASS_NAME
         }))
         .pipe(rename('index.css'))
+        .pipe(gulp.dest('.'))
+        .pipe(rename('index.scss'))// copy css file for projects that like scss
         .pipe(gulp.dest('.'))
       ;
 
