@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated. 
-You may NOT sub-license, resell, rent, redistribute or otherwise transfer the icon without express written permission from iconmonstr.com -->
-
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-<path fill="#444444" id="phone-3-icon" d="M266.71,161.055l-34.188,17.167L176.756,67.167L210.944,50L266.71,161.055z M343.059,313.099
-	l-34.188,17.167l55.765,111.058l34.189-17.169L343.059,313.099z M212.686,190.197L156.066,77.445
-	c-22.941,12.257-87.766,40.704,7.56,230.54c95.761,190.703,155.069,155.406,180.344,143.662l-56.572-112.664
-	C251.062,356.964,177.049,209.504,212.686,190.197z"/>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="64px" height="64px" viewBox="224 224 64 64" enable-background="new 224 224 64 64" xml:space="preserve">
+<path id="phone-3-icon" d="M257.339,244.132l-4.274,2.146l-6.971-13.882l4.273-2.146L257.339,244.132z M266.882,263.137
+	l-4.273,2.146l6.971,13.882l4.274-2.146L266.882,263.137z M250.586,247.775l-7.077-14.094c-2.868,1.532-10.971,5.088,0.945,28.818
+	c11.97,23.838,19.384,19.426,22.543,17.958l-7.072-14.083C255.383,268.621,246.131,250.188,250.586,247.775z"/>
 </svg>

@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated. 
-You may NOT sub-license, resell, rent, redistribute or otherwise transfer the icon without express written permission from iconmonstr.com -->
-
-
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-
-	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-
-<path fill="#444444" id="check-mark-3-icon" d="M256,50C142.229,50,50,142.229,50,256s92.229,206,206,206s206-92.229,206-206S369.771,50,256,50z
-
-	 M220.953,366.959l-97.326-97.352l41.44-41.448l55.884,55.899l129.018-129.018l41.459,41.431L220.953,366.959z"/>
-
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="64px" height="64px" viewBox="224 224 64 64" enable-background="new 224 224 64 64" xml:space="preserve">
+<path id="check-mark-3-icon" d="M256,230.25c-14.221,0-25.75,11.529-25.75,25.75s11.529,25.75,25.75,25.75s25.75-11.529,25.75-25.75
+	S270.221,230.25,256,230.25z M251.619,269.87l-12.166-12.169l5.18-5.181l6.985,6.987l16.127-16.127l5.182,5.179L251.619,269.87z"/>
 </svg>
-

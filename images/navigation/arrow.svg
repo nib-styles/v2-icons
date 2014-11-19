@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated. 
-You may NOT sub-license, resell, rent, redistribute or otherwise transfer the icon without express written permission from iconmonstr.com -->
-
-
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-
-	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-
-<polygon id="arrow-20-icon" fill="#444444" points="280.271,73.401 231.388,122.052 328.352,219.48 50,219.48 50,292.52 328.352,292.52 
-
-	231.388,389.948 280.271,438.599 462,256 "/>
-
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="64px" height="64px" viewBox="224 224 64 64" enable-background="new 224 224 64 64" xml:space="preserve">
+<polygon id="arrow-20-icon" points="259.034,233.175 252.923,239.257 265.044,251.435 230.25,251.435 230.25,260.565 
+	265.044,260.565 252.923,272.743 259.034,278.825 281.75,256 "/>
 </svg>
-
