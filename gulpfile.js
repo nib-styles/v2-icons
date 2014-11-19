@@ -10,6 +10,7 @@ var consolidate = require('gulp-consolidate');
 var
   SRC_DIR       = './images',
   FONT_DIR      = './fonts',
+  SASS_FONT_DIR = 'nib-styles-v2-icons/fonts',
   FONT_NAME     = 'nibdings',
   CLASS_NAME    = 'v2-icon'
 ;
@@ -49,7 +50,17 @@ gulp.task('build--fonts', function(cb) {
         }))
         .pipe(rename('index.css'))
         .pipe(gulp.dest('.'))
-        .pipe(rename('index.scss'))// copy css file for projects that like scss
+      ;
+
+      //generate a SASS version icon stylesheet from a template
+      gulp.src('templates/stylesheet.ejs')
+        .pipe(consolidate('ejs', {
+          glyphs:     codepoints,
+          fontName:   options.fontName,
+          fontPath:   SASS_FONT_DIR,
+          className:  CLASS_NAME
+        }))
+        .pipe(rename('index.scss'))
         .pipe(gulp.dest('.'))
       ;
 

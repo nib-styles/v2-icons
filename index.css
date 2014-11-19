@@ -296,38 +296,38 @@
     content: "\E02E"
 }
 
-.v2-icon--beard:before {
+.v2-icon--arrow:before {
     content: "\E02F"
 }
 
-.v2-icon--fire:before {
+.v2-icon--chevron-circle-inverse:before {
     content: "\E030"
 }
 
-.v2-icon--giraffe:before {
+.v2-icon--chevron-circle:before {
     content: "\E031"
 }
 
-.v2-icon--glasses:before {
+.v2-icon--chevron:before {
     content: "\E032"
 }
 
-.v2-icon--lightning:before {
+.v2-icon--beard:before {
     content: "\E033"
 }
 
-.v2-icon--arrow:before {
+.v2-icon--fire:before {
     content: "\E034"
 }
 
-.v2-icon--chevron-circle-inverse:before {
+.v2-icon--giraffe:before {
     content: "\E035"
 }
 
-.v2-icon--chevron-circle:before {
+.v2-icon--glasses:before {
     content: "\E036"
 }
 
-.v2-icon--chevron:before {
+.v2-icon--lightning:before {
     content: "\E037"
 }
