@@ -112,222 +112,214 @@
 /* === ICON: GLYPH === */
 
 
-.v2-icon--ambulance:before {
+.v2-icon--calendar:before {
     content: "\E001"
 }
 
-.v2-icon--arrow:before {
-    content: "\E011"
-}
-
-.v2-icon--beard:before {
-    content: "\E015"
-}
-
-.v2-icon--calendar:before {
-    content: "\E01A"
-}
-
-.v2-icon--chevron:before {
-    content: "\E014"
-}
-
-.v2-icon--chevron-circle:before {
-    content: "\E013"
-}
-
-.v2-icon--chevron-circle-inverse:before {
-    content: "\E012"
-}
-
-.v2-icon--clock:before {
+.v2-icon--close-circle-inverse:before {
     content: "\E002"
 }
 
-.v2-icon--close:before {
-    content: "\E01D"
-}
-
 .v2-icon--close-circle:before {
-    content: "\E01C"
-}
-
-.v2-icon--close-circle-inverse:before {
-    content: "\E01B"
-}
-
-.v2-icon--document:before {
-    content: "\E01F"
-}
-
-.v2-icon--document-inverse:before {
-    content: "\E01E"
-}
-
-.v2-icon--dollar:before {
-    content: "\E005"
-}
-
-.v2-icon--dollar-circle:before {
-    content: "\E004"
-}
-
-.v2-icon--dollar-circle-inverse:before {
     content: "\E003"
 }
 
-.v2-icon--edit:before {
-    content: "\E020"
+.v2-icon--close:before {
+    content: "\E004"
 }
 
-.v2-icon--envelope:before {
-    content: "\E021"
+.v2-icon--document-inverse:before {
+    content: "\E005"
 }
 
-.v2-icon--fire:before {
-    content: "\E016"
-}
-
-.v2-icon--flag:before {
+.v2-icon--document:before {
     content: "\E006"
 }
 
-.v2-icon--giraffe:before {
-    content: "\E017"
-}
-
-.v2-icon--glasses:before {
-    content: "\E018"
-}
-
-.v2-icon--heartrate:before {
+.v2-icon--edit:before {
     content: "\E007"
 }
 
-.v2-icon--help:before {
-    content: "\E024"
-}
-
-.v2-icon--help-circle:before {
-    content: "\E023"
-}
-
-.v2-icon--help-circle-inverse:before {
-    content: "\E022"
-}
-
-.v2-icon--hospital:before {
+.v2-icon--envelope:before {
     content: "\E008"
 }
 
-.v2-icon--info-circle:before {
-    content: "\E026"
-}
-
-.v2-icon--info-circle-inverse:before {
-    content: "\E025"
-}
-
-.v2-icon--lightning:before {
-    content: "\E019"
-}
-
-.v2-icon--location:before {
-    content: "\E027"
-}
-
-.v2-icon--lock:before {
-    content: "\E029"
-}
-
-.v2-icon--lock-circle-inverse:before {
-    content: "\E028"
-}
-
-.v2-icon--megaphone:before {
+.v2-icon--help-circle-inverse:before {
     content: "\E009"
 }
 
-.v2-icon--menu:before {
-    content: "\E02A"
-}
-
-.v2-icon--paper-clip:before {
+.v2-icon--help-circle:before {
     content: "\E00A"
 }
 
-.v2-icon--pdf:before {
-    content: "\E02C"
-}
-
-.v2-icon--pdf-inverse:before {
-    content: "\E02B"
-}
-
-.v2-icon--phone:before {
-    content: "\E02D"
-}
-
-.v2-icon--plus:before {
-    content: "\E030"
-}
-
-.v2-icon--plus-circle:before {
-    content: "\E02F"
-}
-
-.v2-icon--plus-circle-inverse:before {
-    content: "\E02E"
-}
-
-.v2-icon--settings:before {
+.v2-icon--help:before {
     content: "\E00B"
 }
 
-.v2-icon--shopping-cart:before {
-    content: "\E031"
-}
-
-.v2-icon--smartphone:before {
-    content: "\E032"
-}
-
-.v2-icon--stopwatch:before {
+.v2-icon--info-circle-inverse:before {
     content: "\E00C"
 }
 
-.v2-icon--switching:before {
+.v2-icon--info-circle:before {
     content: "\E00D"
 }
 
-.v2-icon--thumbs-up:before {
+.v2-icon--location:before {
     content: "\E00E"
 }
 
-.v2-icon--tick:before {
-    content: "\E035"
-}
-
-.v2-icon--tick-circle:before {
-    content: "\E034"
-}
-
-.v2-icon--tick-circle-inverse:before {
-    content: "\E033"
-}
-
-.v2-icon--tools:before {
+.v2-icon--lock-circle-inverse:before {
     content: "\E00F"
 }
 
-.v2-icon--umbrella:before {
+.v2-icon--lock:before {
     content: "\E010"
 }
 
-.v2-icon--warning:before {
-    content: "\E037"
+.v2-icon--menu:before {
+    content: "\E011"
+}
+
+.v2-icon--pdf-inverse:before {
+    content: "\E012"
+}
+
+.v2-icon--pdf:before {
+    content: "\E013"
+}
+
+.v2-icon--phone:before {
+    content: "\E014"
+}
+
+.v2-icon--plus-circle-inverse:before {
+    content: "\E015"
+}
+
+.v2-icon--plus-circle:before {
+    content: "\E016"
+}
+
+.v2-icon--plus:before {
+    content: "\E017"
+}
+
+.v2-icon--shopping-cart:before {
+    content: "\E018"
+}
+
+.v2-icon--smartphone:before {
+    content: "\E019"
+}
+
+.v2-icon--tick-circle-inverse:before {
+    content: "\E01A"
+}
+
+.v2-icon--tick-circle:before {
+    content: "\E01B"
+}
+
+.v2-icon--tick:before {
+    content: "\E01C"
 }
 
 .v2-icon--warning-inverse:before {
-    content: "\E036"
+    content: "\E01D"
+}
+
+.v2-icon--warning:before {
+    content: "\E01E"
+}
+
+.v2-icon--ambulance:before {
+    content: "\E01F"
+}
+
+.v2-icon--clock:before {
+    content: "\E020"
+}
+
+.v2-icon--dollar-circle-inverse:before {
+    content: "\E021"
+}
+
+.v2-icon--dollar-circle:before {
+    content: "\E022"
+}
+
+.v2-icon--dollar:before {
+    content: "\E023"
+}
+
+.v2-icon--flag:before {
+    content: "\E024"
+}
+
+.v2-icon--heartrate:before {
+    content: "\E025"
+}
+
+.v2-icon--hospital:before {
+    content: "\E026"
+}
+
+.v2-icon--megaphone:before {
+    content: "\E027"
+}
+
+.v2-icon--paper-clip:before {
+    content: "\E028"
+}
+
+.v2-icon--settings:before {
+    content: "\E029"
+}
+
+.v2-icon--stopwatch:before {
+    content: "\E02A"
+}
+
+.v2-icon--switching:before {
+    content: "\E02B"
+}
+
+.v2-icon--thumbs-up:before {
+    content: "\E02C"
+}
+
+.v2-icon--tools:before {
+    content: "\E02D"
+}
+
+.v2-icon--umbrella:before {
+    content: "\E02E"
+}
+
+.v2-icon--arrow:before {
+    content: "\E02F"
+}
+
+.v2-icon--chevron-circle-inverse:before {
+    content: "\E030"
+}
+
+.v2-icon--chevron-circle:before {
+    content: "\E031"
+}
+
+.v2-icon--chevron:before {
+    content: "\E032"
+}
+
+.v2-icon--giraffe:before {
+    content: "\E033"
+}
+
+.v2-icon--glasses:before {
+    content: "\E034"
+}
+
+.v2-icon--lightning:before {
+    content: "\E035"
 }
