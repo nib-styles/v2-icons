@@ -2,9 +2,8 @@
 <!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="64px" height="64px" viewBox="224 224 64 64" enable-background="new 224 224 64 64" xml:space="preserve">
-<path id="time-icon" d="M273.243,262.136h-21.67v-23.845h6.99v16.854h14.68V262.136z M256,230.99
-	c-13.824,0-25.01,11.188-25.01,25.01c0,13.824,11.188,25.01,25.01,25.01c13.824,0,25.01-11.188,25.01-25.01
-	C281.01,242.176,269.822,230.99,256,230.99 M256,224c17.673,0,32,14.327,32,32s-14.327,32-32,32s-32-14.327-32-32
-	S238.327,224,256,224z"/>
+	 width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<path id="time-icon" d="M49.243,38.136h-21.67V14.291h6.99v16.854h14.68V38.136z M32,6.99C18.176,6.99,6.99,18.178,6.99,32
+	c0,13.824,11.188,25.01,25.01,25.01c13.824,0,25.01-11.188,25.01-25.01C57.01,18.176,45.822,6.99,32,6.99 M32,0
+	c17.673,0,32,14.327,32,32S49.673,64,32,64S0,49.673,0,32S14.327,0,32,0z"/>
 </svg>
