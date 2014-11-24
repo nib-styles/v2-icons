@@ -1,0 +1,51 @@
+/* Helper classes
+  Classes that help show tests but are not part of the component
+*/
+
+@-webkit-keyframes spin {
+  0%  {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0%  {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.test-spin-always {
+  -webkit-animation: spin 4s infinite linear;
+  animation: spin 4s infinite linear;
+}
+
+.test-font-large {
+  font-size: 1.5em;
+}
+.test-border {
+  border:1px solid red;
+  box-sizing: border-box;
+}
+
+.test-rotate-40 {
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+.test-rotate-80 {
+  -webkit-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+.test-rotate-120 {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.test-rotate-200 {
+  -webkit-transform: rotate(200deg);
+  transform: rotate(200deg);
+}
+
+.test-icon-huge {
+  font-size: 300px !important;
+}

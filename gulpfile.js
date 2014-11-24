@@ -6,19 +6,25 @@ var mkdirp      = require('mkdirp');
 var rename      = require('gulp-rename');
 var iconfont    = require('gulp-iconfont');
 var consolidate = require('gulp-consolidate');
+var Pageres     = require('pageres');
 
 var
-  SRC_DIR       = './images',
-  FONT_DIR      = './fonts',
-  SASS_FONT_DIR = 'nib-styles-v2-icons/fonts',
-  FONT_NAME     = 'nibdings',
-  CLASS_NAME    = 'v2-icon'
+  SRC_DIR        = './images',
+  FONT_DIR       = './fonts',
+  SASS_FONT_DIR  = 'nib-styles-v2-icons/fonts',
+  FONT_NAME      = 'nibdings',
+  CLASS_NAME     = 'v2-icon',
+  SCREENSHOT_DIR = 'test/screenshots'
 ;
 
 gulp.task('clean--stylesheet', function(cb) {
   rimraf('index.css', function(){
     rimraf('index.scss', cb);
   });
+});
+
+gulp.task('clean--screenshots', function(cb) {
+  rimraf('test/screenshots',cb);
 });
 
 gulp.task('clean--fonts', function(cb) {
@@ -81,10 +87,26 @@ gulp.task('build--fonts', function(cb) {
   ;
 });
 
+
+gulp.task('screenshot', function(cb){
+  var pageres = new Pageres({delay: 2})
+    .src('test/index.html', ['480x320'], {crop: false})
+    .dest(SCREENSHOT_DIR);
+
+  pageres.run(function (err) {
+    if (err) {
+      throw err;
+    }
+
+    console.log('done');
+  });
+});
+
 gulp.task('default', function() {
   sequence(
-    ['clean--fonts', 'clean--stylesheet'],
+    ['clean--fonts', 'clean--stylesheet', 'clean--screenshots'],
     'mkdir--fonts',
-    'build--fonts'
+    'build--fonts',
+    ['screenshot']
   )
 });
