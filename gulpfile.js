@@ -7,6 +7,7 @@ var rename      = require('gulp-rename');
 var iconfont    = require('gulp-iconfont');
 var consolidate = require('gulp-consolidate');
 var Pageres     = require('pageres');
+var open        = require("open");
 
 var
   SRC_DIR        = './images',
@@ -87,19 +88,22 @@ gulp.task('build--fonts', function(cb) {
   ;
 });
 
-
 gulp.task('screenshot', function(cb){
+
   var pageres = new Pageres({delay: 2})
     .src('test/index.html', ['480x320'], {crop: false})
-    .dest(SCREENSHOT_DIR);
+    .dest(SCREENSHOT_DIR)
+    .run(function(err) {
 
-  pageres.run(function (err) {
-    if (err) {
-      throw err;
-    }
+      if (err) {
+        cb(err);
+      } else {
+        open(SCREENSHOT_DIR+'/test!index.html-480x320.png', cb);
+      }
 
-    console.log('done');
-  });
+    })
+  ;
+
 });
 
 gulp.task('default', function() {
