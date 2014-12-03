@@ -7,7 +7,8 @@ var rename      = require('gulp-rename');
 var iconfont    = require('gulp-iconfont');
 var consolidate = require('gulp-consolidate');
 var Pageres     = require('pageres');
-var open        = require("open");
+var open        = require('open');
+var ttfpatch    = require('nodeTTFPatch');
 
 var
   SRC_DIR        = './images',
@@ -82,10 +83,14 @@ gulp.task('build--fonts', function(cb) {
         .pipe(gulp.dest('.'))
       ;
 
-      cb();//FIXME: it still won't be finished when we get to here
+      setTimeout(cb, 1000);//FIXME: Yuck! It still won't be finished when we get to here.
     })
     .pipe(gulp.dest(FONT_DIR))
   ;
+});
+
+gulp.task('fix--fonts', function() {
+  ttfpatch(__dirname+'/fonts/nibdings.ttf', 0); //fix permission error displayed in IE
 });
 
 gulp.task('screenshot', function(cb){
@@ -111,6 +116,7 @@ gulp.task('default', function() {
     ['clean--fonts', 'clean--stylesheet', 'clean--screenshots'],
     'mkdir--fonts',
     'build--fonts',
+    'fix--fonts',
     ['screenshot']
   )
 });
