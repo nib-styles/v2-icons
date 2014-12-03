@@ -23,7 +23,7 @@ Run the build script:
 
 ## Adding new icons
 
-1. Create your `*.svg` on an artboard *exactly* 64x64px in all black.
+1. Create your `*.svg` on an artboard *exactly* 64x64px in all black. Read the [save settings for Illustrator](https://www.npmjs.org/package/gulp-iconfont).
 2. Add your `*.svg` to the `images/` directory.
 
 ### Icon Naming

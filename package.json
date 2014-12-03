@@ -9,6 +9,7 @@
     "gulp-iconfont": "^0.2.1",
     "gulp-rename": "^1.2.0",
     "mkdirp": "^0.5.0",
+    "nodettfpatch": "^1.0.0",
     "open": "0.0.5",
     "pageres": "1.0.1",
     "rimraf": "^2.2.8",
