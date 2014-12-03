@@ -112,6 +112,10 @@
 /* === ICON: GLYPH === */
 
 
+.v2-icon--kshopping-cart:before {
+    content: "\E036"
+}
+
 .v2-icon--calendar:before {
     content: "\E001"
 }
