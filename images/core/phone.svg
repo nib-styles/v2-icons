@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="64px" height="64px" viewBox="224 224 64 64" enable-background="new 224 224 64 64" xml:space="preserve">
-<path id="phone-3-icon" d="M257.339,244.132l-4.274,2.146l-6.971-13.882l4.273-2.146L257.339,244.132z M266.882,263.137
-	l-4.273,2.146l6.971,13.882l4.274-2.146L266.882,263.137z M250.586,247.775l-7.077-14.094c-2.868,1.532-10.971,5.088,0.945,28.818
-	c11.97,23.838,19.384,19.426,22.543,17.958l-7.072-14.083C255.383,268.621,246.131,250.188,250.586,247.775z"/>
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<path id="phone-3-icon" d="M33.7,17.3l-5.3,2.7L19.7,2.7L25,0L33.7,17.3z M45.5,40.9l-5.3,2.7l8.7,17.3l5.3-2.7L45.5,40.9z
+	 M25.3,21.8L16.5,4.3c-3.6,1.9-13.6,6.3,1.2,35.8c14.9,29.6,24.1,24.1,28,22.3l-8.8-17.5C31.2,47.7,19.7,24.8,25.3,21.8z"/>
 </svg>
