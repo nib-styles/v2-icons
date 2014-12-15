@@ -24,7 +24,7 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    vertical-align: text-bottom;
+    vertical-align: middle;
 }
 
 .<%= className %>:before {
@@ -91,7 +91,7 @@
 }
 
 .<%= className %>--rotate-270 {
-    transform: rotate(180deg);
+    transform: rotate(270deg);
 }
 
 /* === ICON: SPIN === */
@@ -106,7 +106,7 @@
 }
 
 .<%= className %>--spin {
-    animation: <%= className %>-spin 2s infinite linear;
+    animation: <%= className %>-spin 0.75s infinite linear;
 }
 
 /* === ICON: GLYPH === */

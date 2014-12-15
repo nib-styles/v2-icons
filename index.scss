@@ -24,7 +24,7 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    vertical-align: text-bottom;
+    vertical-align: middle;
 }
 
 .v2-icon:before {
@@ -91,7 +91,7 @@
 }
 
 .v2-icon--rotate-270 {
-    transform: rotate(180deg);
+    transform: rotate(270deg);
 }
 
 /* === ICON: SPIN === */
@@ -106,7 +106,7 @@
 }
 
 .v2-icon--spin {
-    animation: v2-icon-spin 2s infinite linear;
+    animation: v2-icon-spin 0.75s infinite linear;
 }
 
 /* === ICON: GLYPH === */
@@ -220,10 +220,6 @@
     content: "\E00C"
 }
 
-.v2-icon--kshopping-cart:before {
-    content: "\E036"
-}
-
 .v2-icon--location:before {
     content: "\E00E"
 }
@@ -286,6 +282,10 @@
 
 .v2-icon--smartphone:before {
     content: "\E019"
+}
+
+.v2-icon--spinner:before {
+    content: "\E036"
 }
 
 .v2-icon--stopwatch:before {
