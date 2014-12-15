@@ -109,6 +109,13 @@
     animation: <%= className %>-spin 0.75s infinite linear;
 }
 
+/* === ICON: ALIGNMENT === */
+
+/* offset the vertical alignment by the descender height so the icon still looks centered where `text-transform: uppercase` is applied to the containing div */
+.<%= className %>--offset-descenders {
+    margin-top: -0.18em;
+}
+
 /* === ICON: GLYPH === */
 
 <% glyphs.forEach( function(glyph) { %>
