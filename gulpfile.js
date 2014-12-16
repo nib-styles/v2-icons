@@ -41,7 +41,7 @@ gulp.task('build--fonts', function(cb) {
   gulp.src([SRC_DIR+'/*.*', SRC_DIR+'/**/*.*'])
     .pipe(iconfont({
       fontName:         FONT_NAME,
-      appendCodepoints: false,
+      appendCodepoints: true,
       fontHeight:       1000, //magic number to fix curve rendering problem see: https://github.com/fontello/svg2ttf/issues/18
       normalize:        true,
       log:              false //replace with `function() {}` to disable logging
