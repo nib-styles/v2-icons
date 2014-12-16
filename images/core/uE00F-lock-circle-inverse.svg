@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="64px" height="64px" viewBox="224 224 64 64" enable-background="new 224 224 64 64" xml:space="preserve">
-<path id="lock-12-icon" d="M256,230.25c-14.221,0-25.75,11.529-25.75,25.75s11.529,25.75,25.75,25.75
-	c14.221,0,25.75-11.528,25.75-25.75S270.221,230.25,256,230.25z M249.278,248.744c0-3.844,3.128-6.972,6.972-6.972
-	c3.844,0,6.972,3.128,6.972,6.972v3.948h-3.15v-3.948c0-2.107-1.715-3.822-3.822-3.822c-2.107,0-3.822,1.715-3.822,3.822v3.948
-	h-3.15V248.744L249.278,248.744z M265.574,267.728h-18.648v-13.146h18.648V267.728z"/>
+	 width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<path id="lock-12-icon" d="M32,0C14.3,0,0,14.3,0,32s14.3,32,32,32s32-14.3,32-32S49.7,0,32,0z M23.6,23c0-4.8,3.9-8.7,8.7-8.7
+	S41,18.2,41,23v4.9h-3.9V23c0-2.6-2.1-4.7-4.7-4.7s-4.7,2.1-4.7,4.7v4.9h-3.9V23H23.6z M43.9,46.6H20.7V30.2h23.2V46.6z"/>
 </svg>
