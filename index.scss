@@ -24,7 +24,7 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    vertical-align: text-bottom;
+    vertical-align: middle;
 }
 
 .v2-icon:before {
@@ -107,6 +107,13 @@
 
 .v2-icon--spin {
     animation: v2-icon-spin 0.75s infinite linear;
+}
+
+/* === ICON: ALIGNMENT === */
+
+/* offset the vertical alignment by the descender height so the icon still looks centered where `text-transform: uppercase` is applied to the containing div */
+.v2-icon--offset-descenders {
+    margin-top: -0.18em;
 }
 
 /* === ICON: GLYPH === */
