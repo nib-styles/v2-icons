@@ -243,10 +243,6 @@
     content: "\E01E"
 }
 
-.v2-icon--person:before {
-    content: "\E037"
-}
-
 .v2-icon--ambulance:before {
     content: "\E023"
 }
@@ -321,6 +317,10 @@
 
 .v2-icon--umbrella:before {
     content: "\E035"
+}
+
+.v2-icon--person:before {
+    content: "\E037"
 }
 
 .v2-icon--arrow:before {
