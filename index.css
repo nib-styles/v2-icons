@@ -243,6 +243,10 @@
     content: "\E01E"
 }
 
+.v2-icon--fax:before {
+    content: "\E038"
+}
+
 .v2-icon--ambulance:before {
     content: "\E023"
 }
