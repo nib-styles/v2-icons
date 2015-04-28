@@ -4,12 +4,12 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
 <circle cx="32" cy="32" r="8.4"/>
-<circle cx="32" cy="56" r="8.4"/>
-<circle cx="48.971" cy="48.971" r="7.6"/>
-<circle cx="56" cy="32" r="6.7"/>
-<circle cx="48.971" cy="15.029" r="5.9"/>
-<circle cx="32" cy="8" r="5"/>
-<circle cx="15.029" cy="15.029" r="4.2"/>
-<circle cx="8" cy="32" r="3.4"/>
-<circle cx="15.029" cy="48.971" r="2.6"/>
+<circle cx="32" cy="55.6" r="8.4"/>
+<circle cx="48.688" cy="48.688" r="7.6"/>
+<circle cx="55.6" cy="32" r="6.7"/>
+<circle cx="48.688" cy="15.312" r="5.9"/>
+<circle cx="32" cy="8.4" r="5"/>
+<circle cx="15.312" cy="15.312" r="4.2"/>
+<circle cx="8.4" cy="32" r="3.4"/>
+<circle cx="15.312" cy="48.688" r="2.6"/>
 </svg>
