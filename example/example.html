@@ -21,6 +21,19 @@
             font-family: "open sans";
         }
 
+        @-webkit-keyframes v2-icon-spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(359deg);
+            }
+        }
+
+        .v2-icon--spin {
+            -webkit-animation: v2-icon-spin 0.75s infinite linear;
+        }
+
     </style>
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:100,300,700" rel="stylesheet" type="text/css">
 </head>
@@ -839,6 +852,10 @@
     <ul class="hlist">
         <li>
             <i class="v2-icon v2-icon--ambulance v2-icon--small v2-icon--spin"></i>
+            <br/>
+        </li>
+        <li>
+            <i class="v2-icon v2-icon--spinner v2-icon--small v2-icon--spin"></i>
             <br/>
         </li>
     </ul>
