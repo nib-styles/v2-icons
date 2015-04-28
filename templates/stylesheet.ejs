@@ -123,18 +123,3 @@
     content: "\<%= glyph.codepoint.toString(16).toUpperCase() %>"
 }
 <% }); %>
-
-/* === ICON: SPINNER - spin doesn't work perfectly from the font  === */
-
-.<%= className %>--spinner {
-    width: 1em;
-    height: 1em;
-    background-image: url('images/uE036-spinner.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.<%= className %>--spinner:before {
-    content: "";
-}

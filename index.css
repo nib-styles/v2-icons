@@ -215,22 +215,6 @@
     content: "\E037"
 }
 
-.v2-icon--arrow:before {
-    content: "\E01F"
-}
-
-.v2-icon--chevron-circle-inverse:before {
-    content: "\E020"
-}
-
-.v2-icon--chevron-circle:before {
-    content: "\E021"
-}
-
-.v2-icon--chevron:before {
-    content: "\E022"
-}
-
 .v2-icon--calendar:before {
     content: "\E001"
 }
@@ -355,18 +339,18 @@
     content: "\E038"
 }
 
-
-/* === ICON: SPINNER - spin doesn't work perfectly from the font  === */
-
-.v2-icon--spinner {
-    width: 1em;
-    height: 1em;
-    background-image: url('images/uE036-spinner.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.v2-icon--arrow:before {
+    content: "\E01F"
 }
 
-.v2-icon--spinner:before {
-    content: "";
+.v2-icon--chevron-circle-inverse:before {
+    content: "\E020"
+}
+
+.v2-icon--chevron-circle:before {
+    content: "\E021"
+}
+
+.v2-icon--chevron:before {
+    content: "\E022"
 }
