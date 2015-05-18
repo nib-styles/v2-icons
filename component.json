@@ -1,10 +1,10 @@
 {
   "name": "v2-icons",
   "styles": [
-    "index.css",
-    "index.scss"
+    "index.css"
   ],
   "files": [
+    "index.scss",
     "fonts/nibdings.eot",
     "fonts/nibdings.svg",
     "fonts/nibdings.ttf",
