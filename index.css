@@ -5,12 +5,12 @@
     font-family: 'nibdings';
     font-weight: normal;
     font-style: normal;
-    src: url('./fonts/nibdings.eot');
+    src: url('./fonts/nibdings.eot?v=2.2.2');
     src:
-        url('./fonts/nibdings.eot?#iefix') format('eot'),
-        url('./fonts/nibdings.woff') format('woff'),
-        url('./fonts/nibdings.ttf') format('truetype'),
-        url('./fonts/nibdings.svg#nibdings') format('svg')
+        url('./fonts/nibdings.eot?v=2.2.2#iefix') format('eot'),
+        url('./fonts/nibdings.woff?v=2.2.2') format('woff'),
+        url('./fonts/nibdings.ttf?v=2.2.2') format('truetype'),
+        url('./fonts/nibdings.svg?v=2.2.2#nibdings') format('svg')
     ;
 }
 
