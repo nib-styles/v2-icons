@@ -12,16 +12,16 @@ var ttfpatch    = require('nodeTTFPatch');
 
 var
   SRC_DIR        = './images',
-  FONT_DIR       = './fonts',
-  SASS_FONT_DIR  = 'nib-styles-v2-icons/fonts',
+  FONT_DIR       = './dist/fonts',
+  SASS_FONT_DIR  = 'nib-styles-v2-icons/dist/fonts',
   FONT_NAME      = 'nibdings',
   CLASS_NAME     = 'v2-icon',
-  SCREENSHOT_DIR = 'test/screenshots'
+  SCREENSHOT_DIR = 'dist/screenshots'
 ;
 
 gulp.task('clean--stylesheet', function(cb) {
-  rimraf('index.css', function(){
-    rimraf('index.scss', cb);
+  rimraf('dist/index.css', function(){
+    rimraf('dist/index.scss', cb);
   });
 });
 
@@ -53,11 +53,11 @@ gulp.task('build--fonts', function(cb) {
         .pipe(consolidate('ejs', {
           glyphs:     codepoints,
           fontName:   options.fontName,
-          fontPath:   FONT_DIR,
+          fontPath:   './fonts',
           className:  CLASS_NAME
         }))
         .pipe(rename('index.css'))
-        .pipe(gulp.dest('.'))
+        .pipe(gulp.dest('./dist'))
       ;
 
       //generate a SASS version icon stylesheet from a template
@@ -69,7 +69,7 @@ gulp.task('build--fonts', function(cb) {
           className:  CLASS_NAME
         }))
         .pipe(rename('index.scss'))
-        .pipe(gulp.dest('.'))
+        .pipe(gulp.dest('./dist/'))
       ;
 
       //generate an icon listing from a template
@@ -80,8 +80,8 @@ gulp.task('build--fonts', function(cb) {
           fontPath:   FONT_DIR,
           className:  CLASS_NAME
         }))
-        .pipe(rename('example/example.html'))
-        .pipe(gulp.dest('.'))
+        .pipe(rename('example.html'))
+        .pipe(gulp.dest('./dist'))
       ;
 
       setTimeout(cb, 1000);//FIXME: Yuck! It still won't be finished when we get to here.

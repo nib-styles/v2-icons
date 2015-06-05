@@ -1,13 +1,13 @@
 {
   "name": "v2-icons",
   "styles": [
-    "index.css"
+    "dist/index.css"
   ],
   "files": [
-    "index.scss",
-    "fonts/nibdings.eot",
-    "fonts/nibdings.svg",
-    "fonts/nibdings.ttf",
-    "fonts/nibdings.woff"
+    "dist/index.scss",
+    "dist/fonts/nibdings.eot",
+    "dist/fonts/nibdings.svg",
+    "dist/fonts/nibdings.ttf",
+    "dist/fonts/nibdings.woff"
   ]
 }

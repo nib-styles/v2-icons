@@ -1,7 +1,8 @@
 {
-  "name": "v2-icons",
-  "private": "true",
-  "dependencies": {
+  "name": "@nib-styles/v2-icons",
+  "version": "2.3.0",
+  "main.css": "dist/index.css",
+  "devDependencies": {
     "async": "^0.9.0",
     "ejs": "^1.0.0",
     "gulp": "^3.8.9",
