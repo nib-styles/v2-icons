@@ -1,17 +1,30 @@
 # v2-icons
 
-Icons for nib pages.
+Icon font for nib.
 
-    <i class="v2-icon v2-icon--small v2-icon--arrow v2-icon--lightgrey"></i>
+    <i class="v2-icon v2-icon--small v2-icon--lightgrey v2-icon--calendar"></i>
+    
+See the [pattern library](http://nib-pattern-library.azurewebsites.net/pages/iconography.html) for a full list of available icons.
 
-## Build
+## Designing a new icon
 
-The following software is required:
+ - Your icon *MUST* be a `*.svg`
+ - Your icon *MUST* be 64px by 64px
+ - Your icon *MUST* be black and white
+ - You *SHOULD* make use of the full height of the icon; if you *absolutely* can't make use of the full height of the icon then you *MUST* center the icon vertically - but vertically centered icons may look dodgey in one or two common use cases (see below)
+ - You *MUST* save your icon with [these settings](https://www.npmjs.com/package/gulp-iconfont#preparing-svg-s)
 
-- nodejs
-- gulp
+## Naming a new icon
 
-Install node modules required for building:
+ - name the icon after what the image is, not what the function is
+ - if the icon is in a circle, use the suffix `-circle`
+ - if the icon is white on black, use the suffix `-inverse`
+ 
+## Adding a new icon
+
+Add your `*.svg` to the `icons/` directory
+
+Install the nodejs modules required for building:
 
     npm install
 
@@ -19,15 +32,22 @@ Run the build script:
 
     gulp
 
-**Note**: `index.css` and `fonts/*` are generated files. Do not edit manually.
+## Use cases
 
-## Adding new icons
+The above rules were chosen in order to meet the following use cases:
 
-1. Create your `*.svg` on an artboard *exactly* 64x64px in all black. Read the [save settings for Illustrator](https://www.npmjs.org/package/gulp-iconfont).
-2. Add your `*.svg` to the `images/` directory.
+### Inline with text
 
-### Icon Naming
+![Icon in a button](doc/use-case-btn.png?raw=true)
 
- - name after what the image is, not what the function is
- - if icons are in a circle, add the suffix `-circle`
- - if icons are white on black, add the suffix `-inverse`
+Where the center of an icon should be in line with the center of some text e.g. an icon in a button. For this to look good icons must be vertically centered or make use of the full height.
+
+### Horizontal list
+
+![Icon in a button](doc/use-case-horiz-list.png?raw=true)
+
+Where a number of icons are aligned to the top or bottom of a container e.g. a feature panel. For this to look good icons must all be the same height (preferably make use of the full height).
+
+### Vertical list
+
+Where a number of icons are aligned to the left or right of a container. For this to look good icons must be horizontally centered or make use of the full width.
