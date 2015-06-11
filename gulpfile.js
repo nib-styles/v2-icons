@@ -11,7 +11,7 @@ var open        = require('open');
 var ttfpatch    = require('nodeTTFPatch');
 
 var
-  SRC_DIR        = './images',
+  SRC_DIR        = './icons',
   FONT_DIR       = './dist/fonts',
   SASS_FONT_DIR  = 'nib-styles-v2-icons/dist/fonts',
   FONT_NAME      = 'nibdings',
