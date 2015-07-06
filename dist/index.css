@@ -187,12 +187,36 @@
     content: "\E008"
 }
 
+.v2-icon--facebook:before {
+    content: "\E039"
+}
+
+.v2-icon--facebook-circle:before {
+    content: "\E030"
+}
+
+.v2-icon--facebook-circle-inverse:before {
+    content: "\E029"
+}
+
 .v2-icon--fax:before {
     content: "\E038"
 }
 
 .v2-icon--flag:before {
     content: "\E02A"
+}
+
+.v2-icon--google-plus:before {
+    content: "\E041"
+}
+
+.v2-icon--google-plus-circle:before {
+    content: "\E040"
+}
+
+.v2-icon--google-plus-circle-inverse:before {
+    content: "\E03F"
 }
 
 .v2-icon--heart:before {
@@ -225,6 +249,18 @@
 
 .v2-icon--info-circle-inverse:before {
     content: "\E00C"
+}
+
+.v2-icon--instagram:before {
+    content: "\E044"
+}
+
+.v2-icon--instagram-circle:before {
+    content: "\E043"
+}
+
+.v2-icon--instagram-circle-inverse:before {
+    content: "\E042"
 }
 
 .v2-icon--location:before {
@@ -343,6 +379,18 @@
     content: "\E03D"
 }
 
+.v2-icon--twitter:before {
+    content: "\E047"
+}
+
+.v2-icon--twitter-circle:before {
+    content: "\E046"
+}
+
+.v2-icon--twitter-circle-inverse:before {
+    content: "\E045"
+}
+
 .v2-icon--umbrella:before {
     content: "\E035"
 }
@@ -353,4 +401,16 @@
 
 .v2-icon--warning-inverse:before {
     content: "\E01D"
+}
+
+.v2-icon--youtube:before {
+    content: "\E04A"
+}
+
+.v2-icon--youtube-circle:before {
+    content: "\E049"
+}
+
+.v2-icon--youtube-circle-inverse:before {
+    content: "\E048"
 }
