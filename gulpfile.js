@@ -91,7 +91,7 @@ gulp.task('build--fonts', function(cb) {
 });
 
 gulp.task('fix--fonts', function() {
-  ttfpatch(__dirname+'/fonts/nibdings.ttf', 0); //fix permission error displayed in IE
+  ttfpatch(__dirname+'/dist/fonts/nibdings.ttf', 0); //fix permission error displayed in IE
 });
 
 gulp.task('screenshot', function(cb){
