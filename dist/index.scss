@@ -139,6 +139,8 @@ $v2-icon--close-circle: "\E003";
 
 $v2-icon--close-circle-inverse: "\E002";
 
+$v2-icon--couple: "\E04B";
+
 $v2-icon--document: "\E006";
 
 $v2-icon--document-inverse: "\E005";
@@ -153,9 +155,23 @@ $v2-icon--edit: "\E007";
 
 $v2-icon--envelope: "\E008";
 
+$v2-icon--facebook: "\E039";
+
+$v2-icon--facebook-circle: "\E030";
+
+$v2-icon--facebook-circle-inverse: "\E029";
+
+$v2-icon--family: "\E04C";
+
 $v2-icon--fax: "\E038";
 
 $v2-icon--flag: "\E02A";
+
+$v2-icon--google-plus: "\E041";
+
+$v2-icon--google-plus-circle: "\E040";
+
+$v2-icon--google-plus-circle-inverse: "\E03F";
 
 $v2-icon--heart: "\E03E";
 
@@ -173,6 +189,12 @@ $v2-icon--info-circle: "\E00D";
 
 $v2-icon--info-circle-inverse: "\E00C";
 
+$v2-icon--instagram: "\E044";
+
+$v2-icon--instagram-circle: "\E043";
+
+$v2-icon--instagram-circle-inverse: "\E042";
+
 $v2-icon--location: "\E00E";
 
 $v2-icon--lock: "\E010";
@@ -182,6 +204,8 @@ $v2-icon--lock-circle-inverse: "\E00F";
 $v2-icon--megaphone: "\E02D";
 
 $v2-icon--menu: "\E011";
+
+$v2-icon--over-55: "\E04D";
 
 $v2-icon--paper-clip: "\E02E";
 
@@ -207,6 +231,10 @@ $v2-icon--settings: "\E02F";
 
 $v2-icon--shopping-cart: "\E018";
 
+$v2-icon--single: "\E04E";
+
+$v2-icon--single-parent-family: "\E04F";
+
 $v2-icon--slip: "\E03C";
 
 $v2-icon--smartphone: "\E019";
@@ -231,11 +259,23 @@ $v2-icon--tools: "\E034";
 
 $v2-icon--tooth: "\E03D";
 
+$v2-icon--twitter: "\E047";
+
+$v2-icon--twitter-circle: "\E046";
+
+$v2-icon--twitter-circle-inverse: "\E045";
+
 $v2-icon--umbrella: "\E035";
 
 $v2-icon--warning: "\E01E";
 
 $v2-icon--warning-inverse: "\E01D";
+
+$v2-icon--youtube: "\E04A";
+
+$v2-icon--youtube-circle: "\E049";
+
+$v2-icon--youtube-circle-inverse: "\E048";
 
 
 
@@ -279,6 +319,10 @@ $v2-icon--warning-inverse: "\E01D";
     content: $v2-icon--close-circle-inverse
 }
 
+.v2-icon--couple:before {
+    content: $v2-icon--couple
+}
+
 .v2-icon--document:before {
     content: $v2-icon--document
 }
@@ -307,12 +351,40 @@ $v2-icon--warning-inverse: "\E01D";
     content: $v2-icon--envelope
 }
 
+.v2-icon--facebook:before {
+    content: $v2-icon--facebook
+}
+
+.v2-icon--facebook-circle:before {
+    content: $v2-icon--facebook-circle
+}
+
+.v2-icon--facebook-circle-inverse:before {
+    content: $v2-icon--facebook-circle-inverse
+}
+
+.v2-icon--family:before {
+    content: $v2-icon--family
+}
+
 .v2-icon--fax:before {
     content: $v2-icon--fax
 }
 
 .v2-icon--flag:before {
     content: $v2-icon--flag
+}
+
+.v2-icon--google-plus:before {
+    content: $v2-icon--google-plus
+}
+
+.v2-icon--google-plus-circle:before {
+    content: $v2-icon--google-plus-circle
+}
+
+.v2-icon--google-plus-circle-inverse:before {
+    content: $v2-icon--google-plus-circle-inverse
 }
 
 .v2-icon--heart:before {
@@ -347,6 +419,18 @@ $v2-icon--warning-inverse: "\E01D";
     content: $v2-icon--info-circle-inverse
 }
 
+.v2-icon--instagram:before {
+    content: $v2-icon--instagram
+}
+
+.v2-icon--instagram-circle:before {
+    content: $v2-icon--instagram-circle
+}
+
+.v2-icon--instagram-circle-inverse:before {
+    content: $v2-icon--instagram-circle-inverse
+}
+
 .v2-icon--location:before {
     content: $v2-icon--location
 }
@@ -365,6 +449,10 @@ $v2-icon--warning-inverse: "\E01D";
 
 .v2-icon--menu:before {
     content: $v2-icon--menu
+}
+
+.v2-icon--over-55:before {
+    content: $v2-icon--over-55
 }
 
 .v2-icon--paper-clip:before {
@@ -415,6 +503,14 @@ $v2-icon--warning-inverse: "\E01D";
     content: $v2-icon--shopping-cart
 }
 
+.v2-icon--single:before {
+    content: $v2-icon--single
+}
+
+.v2-icon--single-parent-family:before {
+    content: $v2-icon--single-parent-family
+}
+
 .v2-icon--slip:before {
     content: $v2-icon--slip
 }
@@ -463,6 +559,18 @@ $v2-icon--warning-inverse: "\E01D";
     content: $v2-icon--tooth
 }
 
+.v2-icon--twitter:before {
+    content: $v2-icon--twitter
+}
+
+.v2-icon--twitter-circle:before {
+    content: $v2-icon--twitter-circle
+}
+
+.v2-icon--twitter-circle-inverse:before {
+    content: $v2-icon--twitter-circle-inverse
+}
+
 .v2-icon--umbrella:before {
     content: $v2-icon--umbrella
 }
@@ -473,4 +581,16 @@ $v2-icon--warning-inverse: "\E01D";
 
 .v2-icon--warning-inverse:before {
     content: $v2-icon--warning-inverse
+}
+
+.v2-icon--youtube:before {
+    content: $v2-icon--youtube
+}
+
+.v2-icon--youtube-circle:before {
+    content: $v2-icon--youtube-circle
+}
+
+.v2-icon--youtube-circle-inverse:before {
+    content: $v2-icon--youtube-circle-inverse
 }
