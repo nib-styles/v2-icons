@@ -117,10 +117,15 @@
 
 /* === ICON: GLYPH === */
 
+//icon font name
+$v2-icon--font-name: '<%= fontName %>';
+
+//icon variables
 <% glyphs.forEach( function(glyph) { %>
 $<%= className %>--<%= glyph.name %>: <%- glyph.code %>;
 <% }); %>
 
+//icon classes
 <% glyphs.forEach( function(glyph) { %>
 .<%= className %>--<%= glyph.name %>:before {
   content: $<%= className %>--<%= glyph.name %>
