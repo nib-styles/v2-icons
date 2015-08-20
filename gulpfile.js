@@ -6,6 +6,7 @@ var async       = require('async');
 var rimraf      = require('rimraf');
 var mkdirp      = require('mkdirp');
 var iconfont    = require('gulp-iconfont');
+var glyphsMap   = require('iconfont-glyphs-map');
 var consolidate = require('consolidate');
 var sass        = require('node-sass');
 
@@ -16,17 +17,16 @@ var ttfpatch    = require('nodeTTFPatch');
 var
   SRC_DIR        = './icons',
   FONT_DIR       = './dist/fonts',
-  SASS_FONT_DIR  = 'nib-styles-v2-icons/dist/fonts',
   FONT_NAME      = 'nibdings',
   CLASS_NAME     = 'v2-icon',
-  SCREENSHOT_DIR = 'dist/screenshots'
+  SCREENSHOT_DIR = './dist/screenshots'
 ;
 
 function renderTemplate(src, dst, data, callback) {
   consolidate
     .ejs(src, data)
     .then(function(html) {
-      fs.writeFile(dst, html, callback);
+      fs.writeFile(dst, html, {encoding: 'utf8'}, callback);
     })
     .catch(function(err) {
       callback(err);
@@ -37,7 +37,7 @@ function renderTemplate(src, dst, data, callback) {
 function renderScss(src, dst, callback) {
   sass.render({file: src}, function(err, result) {
     if (err) return callback(err);
-    fs.writeFile(dst, result.css, callback);
+    fs.writeFile(dst, result.css, {encoding: 'utf8'}, callback);
   });
 }
 
@@ -60,18 +60,21 @@ gulp.task('mkdir--fonts', function(cb) {
 });
 
 gulp.task('build--fonts', function(done) {
-  gulp.src([SRC_DIR+'/*.*', SRC_DIR+'/**/*.*'])
+  gulp.src(SRC_DIR+'/**/*.svg')
     .pipe(iconfont({
       fontName:         FONT_NAME,
-      appendCodepoints: true,
+      formats: ['eot', 'svg', 'ttf', 'woff'],
+      appendUnicode:    true,
       fontHeight:       1000, //magic number to fix curve rendering problem see: https://github.com/fontello/svg2ttf/issues/18
       normalize:        true,
       log:              false //replace with `function() {}` to disable logging
     }))
-    .on('codepoints', function(codepoints, options) {
+    .on('glyphs', function(glyphs, options) {
+
+      var glyphMap = glyphsMap.array(glyphs, '\\', true);
 
       var data = {
-        glyphs:     codepoints,
+        glyphs:     glyphMap,
         fontName:   options.fontName,
         fontPath:   './fonts',
         className:  CLASS_NAME
@@ -103,7 +106,7 @@ gulp.task('build--fonts', function(done) {
 });
 
 gulp.task('fix--fonts', function() {
-  ttfpatch(__dirname+'/fonts/nibdings.ttf', 0); //fix permission error displayed in IE
+  ttfpatch(FONT_DIR+'/nibdings.ttf', 0); //fix permission error displayed in IE
 });
 
 gulp.task('screenshot', function(cb){

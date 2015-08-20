@@ -119,101 +119,89 @@
 /* === ICON: GLYPH === */
 
 
-$v2-icon--ambulance: "\E023";
-
-$v2-icon--arrow: "\E01F";
-
 $v2-icon--calendar: "\E001";
-
-$v2-icon--chevron: "\E022";
-
-$v2-icon--chevron-circle: "\E021";
-
-$v2-icon--chevron-circle-inverse: "\E020";
-
-$v2-icon--clock: "\E024";
-
-$v2-icon--close: "\E004";
-
-$v2-icon--close-circle: "\E003";
 
 $v2-icon--close-circle-inverse: "\E002";
 
-$v2-icon--document: "\E006";
+$v2-icon--close-circle: "\E003";
+
+$v2-icon--close: "\E004";
 
 $v2-icon--document-inverse: "\E005";
 
-$v2-icon--dollar: "\E028";
-
-$v2-icon--dollar-circle: "\E027";
-
-$v2-icon--dollar-circle-inverse: "\E026";
+$v2-icon--document: "\E006";
 
 $v2-icon--edit: "\E007";
 
 $v2-icon--envelope: "\E008";
 
-$v2-icon--fax: "\E038";
-
-$v2-icon--flag: "\E02A";
-
-$v2-icon--heart: "\E03E";
-
-$v2-icon--heartrate: "\E02B";
-
-$v2-icon--help: "\E00B";
+$v2-icon--help-circle-inverse: "\E009";
 
 $v2-icon--help-circle: "\E00A";
 
-$v2-icon--help-circle-inverse: "\E009";
-
-$v2-icon--hospital: "\E02C";
-
-$v2-icon--info-circle: "\E00D";
+$v2-icon--help: "\E00B";
 
 $v2-icon--info-circle-inverse: "\E00C";
 
-$v2-icon--location: "\E00E";
+$v2-icon--info-circle: "\E00D";
 
-$v2-icon--lock: "\E010";
+$v2-icon--location: "\E00E";
 
 $v2-icon--lock-circle-inverse: "\E00F";
 
-$v2-icon--megaphone: "\E02D";
+$v2-icon--lock: "\E010";
 
 $v2-icon--menu: "\E011";
 
-$v2-icon--paper-clip: "\E02E";
+$v2-icon--pdf-inverse: "\E012";
 
 $v2-icon--pdf: "\E013";
 
-$v2-icon--pdf-inverse: "\E012";
-
-$v2-icon--person: "\E037";
-
 $v2-icon--phone: "\E014";
-
-$v2-icon--plus: "\E017";
-
-$v2-icon--plus-circle: "\E016";
 
 $v2-icon--plus-circle-inverse: "\E015";
 
-$v2-icon--receipt: "\E03A";
+$v2-icon--plus-circle: "\E016";
 
-$v2-icon--screen: "\E03B";
-
-$v2-icon--settings: "\E02F";
+$v2-icon--plus: "\E017";
 
 $v2-icon--shopping-cart: "\E018";
 
-$v2-icon--slip: "\E03C";
-
 $v2-icon--smartphone: "\E019";
 
-$v2-icon--spinner: "\E036";
+$v2-icon--tick-circle-inverse: "\E01A";
 
-$v2-icon--stethoscope: "\E025";
+$v2-icon--tick-circle: "\E01B";
+
+$v2-icon--tick: "\E01C";
+
+$v2-icon--warning-inverse: "\E01D";
+
+$v2-icon--warning: "\E01E";
+
+$v2-icon--fax: "\E038";
+
+$v2-icon--ambulance: "\E023";
+
+$v2-icon--clock: "\E024";
+
+$v2-icon--dollar-circle-inverse: "\E026";
+
+$v2-icon--dollar-circle: "\E027";
+
+$v2-icon--dollar: "\E028";
+
+$v2-icon--flag: "\E02A";
+
+$v2-icon--heartrate: "\E02B";
+
+$v2-icon--hospital: "\E02C";
+
+$v2-icon--megaphone: "\E02D";
+
+$v2-icon--paper-clip: "\E02E";
+
+$v2-icon--settings: "\E02F";
 
 $v2-icon--stopwatch: "\E031";
 
@@ -221,82 +209,58 @@ $v2-icon--switching: "\E032";
 
 $v2-icon--thumbs-up: "\E033";
 
-$v2-icon--tick: "\E01C";
-
-$v2-icon--tick-circle: "\E01B";
-
-$v2-icon--tick-circle-inverse: "\E01A";
-
 $v2-icon--tools: "\E034";
-
-$v2-icon--tooth: "\E03D";
 
 $v2-icon--umbrella: "\E035";
 
-$v2-icon--warning: "\E01E";
+$v2-icon--person: "\E037";
 
-$v2-icon--warning-inverse: "\E01D";
+$v2-icon--arrow: "\E01F";
+
+$v2-icon--chevron-circle-inverse: "\E020";
+
+$v2-icon--chevron-circle: "\E021";
+
+$v2-icon--chevron: "\E022";
+
+$v2-icon--stethoscope: "\E025";
+
+$v2-icon--spinner: "\E036";
+
+$v2-icon--receipt: "\E03A";
+
+$v2-icon--screen: "\E03B";
+
+$v2-icon--slip: "\E03C";
+
+$v2-icon--tooth: "\E03D";
+
+$v2-icon--heart: "\E03E";
 
 
-
-.v2-icon--ambulance:before {
-    content: $v2-icon--ambulance
-}
-
-.v2-icon--arrow:before {
-    content: $v2-icon--arrow
-}
 
 .v2-icon--calendar:before {
     content: $v2-icon--calendar
-}
-
-.v2-icon--chevron:before {
-    content: $v2-icon--chevron
-}
-
-.v2-icon--chevron-circle:before {
-    content: $v2-icon--chevron-circle
-}
-
-.v2-icon--chevron-circle-inverse:before {
-    content: $v2-icon--chevron-circle-inverse
-}
-
-.v2-icon--clock:before {
-    content: $v2-icon--clock
-}
-
-.v2-icon--close:before {
-    content: $v2-icon--close
-}
-
-.v2-icon--close-circle:before {
-    content: $v2-icon--close-circle
 }
 
 .v2-icon--close-circle-inverse:before {
     content: $v2-icon--close-circle-inverse
 }
 
-.v2-icon--document:before {
-    content: $v2-icon--document
+.v2-icon--close-circle:before {
+    content: $v2-icon--close-circle
+}
+
+.v2-icon--close:before {
+    content: $v2-icon--close
 }
 
 .v2-icon--document-inverse:before {
     content: $v2-icon--document-inverse
 }
 
-.v2-icon--dollar:before {
-    content: $v2-icon--dollar
-}
-
-.v2-icon--dollar-circle:before {
-    content: $v2-icon--dollar-circle
-}
-
-.v2-icon--dollar-circle-inverse:before {
-    content: $v2-icon--dollar-circle-inverse
+.v2-icon--document:before {
+    content: $v2-icon--document
 }
 
 .v2-icon--edit:before {
@@ -307,128 +271,140 @@ $v2-icon--warning-inverse: "\E01D";
     content: $v2-icon--envelope
 }
 
-.v2-icon--fax:before {
-    content: $v2-icon--fax
-}
-
-.v2-icon--flag:before {
-    content: $v2-icon--flag
-}
-
-.v2-icon--heart:before {
-    content: $v2-icon--heart
-}
-
-.v2-icon--heartrate:before {
-    content: $v2-icon--heartrate
-}
-
-.v2-icon--help:before {
-    content: $v2-icon--help
+.v2-icon--help-circle-inverse:before {
+    content: $v2-icon--help-circle-inverse
 }
 
 .v2-icon--help-circle:before {
     content: $v2-icon--help-circle
 }
 
-.v2-icon--help-circle-inverse:before {
-    content: $v2-icon--help-circle-inverse
-}
-
-.v2-icon--hospital:before {
-    content: $v2-icon--hospital
-}
-
-.v2-icon--info-circle:before {
-    content: $v2-icon--info-circle
+.v2-icon--help:before {
+    content: $v2-icon--help
 }
 
 .v2-icon--info-circle-inverse:before {
     content: $v2-icon--info-circle-inverse
 }
 
-.v2-icon--location:before {
-    content: $v2-icon--location
+.v2-icon--info-circle:before {
+    content: $v2-icon--info-circle
 }
 
-.v2-icon--lock:before {
-    content: $v2-icon--lock
+.v2-icon--location:before {
+    content: $v2-icon--location
 }
 
 .v2-icon--lock-circle-inverse:before {
     content: $v2-icon--lock-circle-inverse
 }
 
-.v2-icon--megaphone:before {
-    content: $v2-icon--megaphone
+.v2-icon--lock:before {
+    content: $v2-icon--lock
 }
 
 .v2-icon--menu:before {
     content: $v2-icon--menu
 }
 
-.v2-icon--paper-clip:before {
-    content: $v2-icon--paper-clip
+.v2-icon--pdf-inverse:before {
+    content: $v2-icon--pdf-inverse
 }
 
 .v2-icon--pdf:before {
     content: $v2-icon--pdf
 }
 
-.v2-icon--pdf-inverse:before {
-    content: $v2-icon--pdf-inverse
-}
-
-.v2-icon--person:before {
-    content: $v2-icon--person
-}
-
 .v2-icon--phone:before {
     content: $v2-icon--phone
-}
-
-.v2-icon--plus:before {
-    content: $v2-icon--plus
-}
-
-.v2-icon--plus-circle:before {
-    content: $v2-icon--plus-circle
 }
 
 .v2-icon--plus-circle-inverse:before {
     content: $v2-icon--plus-circle-inverse
 }
 
-.v2-icon--receipt:before {
-    content: $v2-icon--receipt
+.v2-icon--plus-circle:before {
+    content: $v2-icon--plus-circle
 }
 
-.v2-icon--screen:before {
-    content: $v2-icon--screen
-}
-
-.v2-icon--settings:before {
-    content: $v2-icon--settings
+.v2-icon--plus:before {
+    content: $v2-icon--plus
 }
 
 .v2-icon--shopping-cart:before {
     content: $v2-icon--shopping-cart
 }
 
-.v2-icon--slip:before {
-    content: $v2-icon--slip
-}
-
 .v2-icon--smartphone:before {
     content: $v2-icon--smartphone
 }
 
-.v2-icon--spinner:before {
-    content: $v2-icon--spinner
+.v2-icon--tick-circle-inverse:before {
+    content: $v2-icon--tick-circle-inverse
 }
 
-.v2-icon--stethoscope:before {
-    content: $v2-icon--stethoscope
+.v2-icon--tick-circle:before {
+    content: $v2-icon--tick-circle
+}
+
+.v2-icon--tick:before {
+    content: $v2-icon--tick
+}
+
+.v2-icon--warning-inverse:before {
+    content: $v2-icon--warning-inverse
+}
+
+.v2-icon--warning:before {
+    content: $v2-icon--warning
+}
+
+.v2-icon--fax:before {
+    content: $v2-icon--fax
+}
+
+.v2-icon--ambulance:before {
+    content: $v2-icon--ambulance
+}
+
+.v2-icon--clock:before {
+    content: $v2-icon--clock
+}
+
+.v2-icon--dollar-circle-inverse:before {
+    content: $v2-icon--dollar-circle-inverse
+}
+
+.v2-icon--dollar-circle:before {
+    content: $v2-icon--dollar-circle
+}
+
+.v2-icon--dollar:before {
+    content: $v2-icon--dollar
+}
+
+.v2-icon--flag:before {
+    content: $v2-icon--flag
+}
+
+.v2-icon--heartrate:before {
+    content: $v2-icon--heartrate
+}
+
+.v2-icon--hospital:before {
+    content: $v2-icon--hospital
+}
+
+.v2-icon--megaphone:before {
+    content: $v2-icon--megaphone
+}
+
+.v2-icon--paper-clip:before {
+    content: $v2-icon--paper-clip
+}
+
+.v2-icon--settings:before {
+    content: $v2-icon--settings
 }
 
 .v2-icon--stopwatch:before {
@@ -443,34 +419,58 @@ $v2-icon--warning-inverse: "\E01D";
     content: $v2-icon--thumbs-up
 }
 
-.v2-icon--tick:before {
-    content: $v2-icon--tick
-}
-
-.v2-icon--tick-circle:before {
-    content: $v2-icon--tick-circle
-}
-
-.v2-icon--tick-circle-inverse:before {
-    content: $v2-icon--tick-circle-inverse
-}
-
 .v2-icon--tools:before {
     content: $v2-icon--tools
-}
-
-.v2-icon--tooth:before {
-    content: $v2-icon--tooth
 }
 
 .v2-icon--umbrella:before {
     content: $v2-icon--umbrella
 }
 
-.v2-icon--warning:before {
-    content: $v2-icon--warning
+.v2-icon--person:before {
+    content: $v2-icon--person
 }
 
-.v2-icon--warning-inverse:before {
-    content: $v2-icon--warning-inverse
+.v2-icon--arrow:before {
+    content: $v2-icon--arrow
+}
+
+.v2-icon--chevron-circle-inverse:before {
+    content: $v2-icon--chevron-circle-inverse
+}
+
+.v2-icon--chevron-circle:before {
+    content: $v2-icon--chevron-circle
+}
+
+.v2-icon--chevron:before {
+    content: $v2-icon--chevron
+}
+
+.v2-icon--stethoscope:before {
+    content: $v2-icon--stethoscope
+}
+
+.v2-icon--spinner:before {
+    content: $v2-icon--spinner
+}
+
+.v2-icon--receipt:before {
+    content: $v2-icon--receipt
+}
+
+.v2-icon--screen:before {
+    content: $v2-icon--screen
+}
+
+.v2-icon--slip:before {
+    content: $v2-icon--slip
+}
+
+.v2-icon--tooth:before {
+    content: $v2-icon--tooth
+}
+
+.v2-icon--heart:before {
+    content: $v2-icon--heart
 }

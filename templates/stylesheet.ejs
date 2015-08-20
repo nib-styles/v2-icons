@@ -119,7 +119,7 @@
 /* === ICON: GLYPH === */
 
 <% glyphs.forEach( function(glyph) { %>
-$<%= className %>--<%= glyph.name %>: "\<%= glyph.codepoint.toString(16).toUpperCase() %>";
+$<%= className %>--<%= glyph.name %>: <%- glyph.code %>;
 <% }); %>
 
 <% glyphs.forEach( function(glyph) { %>

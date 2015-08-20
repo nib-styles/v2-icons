@@ -79,50 +79,23 @@
   margin-top: -0.18em; }
 
 /* === ICON: GLYPH === */
-.v2-icon--ambulance:before {
-  content: ""; }
-
-.v2-icon--arrow:before {
-  content: ""; }
-
 .v2-icon--calendar:before {
   content: ""; }
-
-.v2-icon--chevron:before {
-  content: ""; }
-
-.v2-icon--chevron-circle:before {
-  content: ""; }
-
-.v2-icon--chevron-circle-inverse:before {
-  content: ""; }
-
-.v2-icon--clock:before {
-  content: ""; }
-
-.v2-icon--close:before {
-  content: ""; }
-
-.v2-icon--close-circle:before {
-  content: ""; }
 
 .v2-icon--close-circle-inverse:before {
   content: ""; }
 
-.v2-icon--document:before {
-  content: ""; }
+.v2-icon--close-circle:before {
+  content: ""; }
+
+.v2-icon--close:before {
+  content: ""; }
 
 .v2-icon--document-inverse:before {
   content: ""; }
 
-.v2-icon--dollar:before {
-  content: ""; }
-
-.v2-icon--dollar-circle:before {
-  content: ""; }
-
-.v2-icon--dollar-circle-inverse:before {
-  content: ""; }
+.v2-icon--document:before {
+  content: ""; }
 
 .v2-icon--edit:before {
   content: ""; }
@@ -130,98 +103,107 @@
 .v2-icon--envelope:before {
   content: ""; }
 
-.v2-icon--fax:before {
-  content: ""; }
-
-.v2-icon--flag:before {
-  content: ""; }
-
-.v2-icon--heart:before {
-  content: ""; }
-
-.v2-icon--heartrate:before {
-  content: ""; }
-
-.v2-icon--help:before {
-  content: ""; }
+.v2-icon--help-circle-inverse:before {
+  content: ""; }
 
 .v2-icon--help-circle:before {
   content: ""; }
 
-.v2-icon--help-circle-inverse:before {
-  content: ""; }
-
-.v2-icon--hospital:before {
-  content: ""; }
-
-.v2-icon--info-circle:before {
-  content: ""; }
+.v2-icon--help:before {
+  content: ""; }
 
 .v2-icon--info-circle-inverse:before {
   content: ""; }
 
+.v2-icon--info-circle:before {
+  content: ""; }
+
 .v2-icon--location:before {
   content: ""; }
-
-.v2-icon--lock:before {
-  content: ""; }
 
 .v2-icon--lock-circle-inverse:before {
   content: ""; }
 
-.v2-icon--megaphone:before {
-  content: ""; }
+.v2-icon--lock:before {
+  content: ""; }
 
 .v2-icon--menu:before {
   content: ""; }
 
-.v2-icon--paper-clip:before {
-  content: ""; }
+.v2-icon--pdf-inverse:before {
+  content: ""; }
 
 .v2-icon--pdf:before {
   content: ""; }
 
-.v2-icon--pdf-inverse:before {
-  content: ""; }
-
-.v2-icon--person:before {
-  content: ""; }
-
 .v2-icon--phone:before {
   content: ""; }
-
-.v2-icon--plus:before {
-  content: ""; }
-
-.v2-icon--plus-circle:before {
-  content: ""; }
 
 .v2-icon--plus-circle-inverse:before {
   content: ""; }
 
-.v2-icon--receipt:before {
-  content: ""; }
+.v2-icon--plus-circle:before {
+  content: ""; }
 
-.v2-icon--screen:before {
-  content: ""; }
-
-.v2-icon--settings:before {
-  content: ""; }
+.v2-icon--plus:before {
+  content: ""; }
 
 .v2-icon--shopping-cart:before {
   content: ""; }
 
-.v2-icon--slip:before {
-  content: ""; }
-
 .v2-icon--smartphone:before {
   content: ""; }
 
-.v2-icon--spinner:before {
-  content: ""; }
+.v2-icon--tick-circle-inverse:before {
+  content: ""; }
 
-.v2-icon--stethoscope:before {
-  content: ""; }
+.v2-icon--tick-circle:before {
+  content: ""; }
+
+.v2-icon--tick:before {
+  content: ""; }
+
+.v2-icon--warning-inverse:before {
+  content: ""; }
+
+.v2-icon--warning:before {
+  content: ""; }
+
+.v2-icon--fax:before {
+  content: ""; }
+
+.v2-icon--ambulance:before {
+  content: ""; }
+
+.v2-icon--clock:before {
+  content: ""; }
+
+.v2-icon--dollar-circle-inverse:before {
+  content: ""; }
+
+.v2-icon--dollar-circle:before {
+  content: ""; }
+
+.v2-icon--dollar:before {
+  content: ""; }
+
+.v2-icon--flag:before {
+  content: ""; }
+
+.v2-icon--heartrate:before {
+  content: ""; }
+
+.v2-icon--hospital:before {
+  content: ""; }
+
+.v2-icon--megaphone:before {
+  content: ""; }
+
+.v2-icon--paper-clip:before {
+  content: ""; }
+
+.v2-icon--settings:before {
+  content: ""; }
 
 .v2-icon--stopwatch:before {
   content: ""; }
@@ -232,26 +214,44 @@
 .v2-icon--thumbs-up:before {
   content: ""; }
 
-.v2-icon--tick:before {
-  content: ""; }
-
-.v2-icon--tick-circle:before {
-  content: ""; }
-
-.v2-icon--tick-circle-inverse:before {
-  content: ""; }
-
 .v2-icon--tools:before {
   content: ""; }
-
-.v2-icon--tooth:before {
-  content: ""; }
 
 .v2-icon--umbrella:before {
   content: ""; }
 
-.v2-icon--warning:before {
-  content: ""; }
+.v2-icon--person:before {
+  content: ""; }
 
-.v2-icon--warning-inverse:before {
-  content: ""; }
+.v2-icon--arrow:before {
+  content: ""; }
+
+.v2-icon--chevron-circle-inverse:before {
+  content: ""; }
+
+.v2-icon--chevron-circle:before {
+  content: ""; }
+
+.v2-icon--chevron:before {
+  content: ""; }
+
+.v2-icon--stethoscope:before {
+  content: ""; }
+
+.v2-icon--spinner:before {
+  content: ""; }
+
+.v2-icon--receipt:before {
+  content: ""; }
+
+.v2-icon--screen:before {
+  content: ""; }
+
+.v2-icon--slip:before {
+  content: ""; }
+
+.v2-icon--tooth:before {
+  content: ""; }
+
+.v2-icon--heart:before {
+  content: ""; }
