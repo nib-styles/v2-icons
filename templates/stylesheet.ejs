@@ -2,29 +2,28 @@
 /* === FONT FACE === */
 
 @font-face {
-    font-family: '<%= fontName %>';
-    font-weight: normal;
-    font-style: normal;
-    src: url('<%= fontPath %>/<%= fontName %>.eot');
-    src:
-        url('<%= fontPath %>/<%= fontName %>.eot?#iefix') format('eot'),
-        url('<%= fontPath %>/<%= fontName %>.woff') format('woff'),
-        url('<%= fontPath %>/<%= fontName %>.ttf') format('truetype'),
-        url('<%= fontPath %>/<%= fontName %>.svg#<%= fontName %>') format('svg')
-    ;
+  font-family: '<%= fontName %>';
+  font-weight: normal;
+  font-style: normal;
+  src: url('<%= fontPath %>/<%= fontName %>.eot');
+  src:
+    url('<%= fontPath %>/<%= fontName %>.eot?#iefix') format('eot'),
+    url('<%= fontPath %>/<%= fontName %>.woff') format('woff'),
+    url('<%= fontPath %>/<%= fontName %>.ttf') format('truetype'),
+    url('<%= fontPath %>/<%= fontName %>.svg#<%= fontName %>') format('svg')
+  ;
 }
-
 
 /* === ICON === */
 
 .<%= className %> {
-    display: inline-block;
-    font: normal normal normal 14px/1 '<%= fontName %>';
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    vertical-align: middle;
+  display: inline-block;
+  font: normal normal normal 14px/1 '<%= fontName %>';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
 }
 
 .<%= className %>:before {
@@ -35,85 +34,85 @@
 /* TODO: USE EMs so icons scale if user agent font size larger than normal? */
 
 .<%= className %>--smallest {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .<%= className %>--smaller {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .<%= className %>--small {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .<%= className %>--medium {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 .<%= className %>--large {
-    font-size: 64px;
+  font-size: 64px;
 }
 
 .<%= className %>--largest {
-    font-size: 128px;
+  font-size: 128px;
 }
 
 /* === ICON: COLOUR === */
 
 .<%= className %>--lightgreen {
-    color: #009623;
+  color: #009623;
 }
 
 .<%= className %>--darkgreen {
-    color: #0a6d12;
+  color: #0a6d12;
 }
 
 .<%= className %>--lightgrey {
-    color: #b9b9b9;
+  color: #b9b9b9;
 }
 
 .<%= className %>--darkgrey {
-    color: #444;
+  color: #444;
 }
 
 .<%= className %>--white {
-    color: #fff;
+  color: #fff;
 }
 
 /* === ICON: ROTATION === */
 
 .<%= className %>--rotate-90 {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .<%= className %>--rotate-180 {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .<%= className %>--rotate-270 {
-    transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 
 /* === ICON: SPIN === */
 
 @keyframes <%= className %>-spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(359deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
 }
 
 .<%= className %>--spin {
-    animation: <%= className %>-spin 0.75s infinite linear;
+  animation: <%= className %>-spin 0.75s infinite linear;
 }
 
 /* === ICON: ALIGNMENT === */
 
 /* offset the vertical alignment by the descender height so the icon still looks centered where `text-transform: uppercase` is applied to the containing div */
 .<%= className %>--offset-descenders {
-    margin-top: -0.18em;
+  margin-top: -0.18em;
 }
 
 /* === ICON: GLYPH === */
@@ -124,6 +123,6 @@ $<%= className %>--<%= glyph.name %>: <%- glyph.code %>;
 
 <% glyphs.forEach( function(glyph) { %>
 .<%= className %>--<%= glyph.name %>:before {
-    content: $<%= className %>--<%= glyph.name %>
+  content: $<%= className %>--<%= glyph.name %>
 }
 <% }); %>

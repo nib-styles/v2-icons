@@ -2,29 +2,29 @@
 /* === FONT FACE === */
 
 @font-face {
-    font-family: 'nibdings';
-    font-weight: normal;
-    font-style: normal;
-    src: url('nib-styles-v2-icons/dist/fonts/nibdings.eot');
-    src:
-        url('nib-styles-v2-icons/dist/fonts/nibdings.eot?#iefix') format('eot'),
-        url('nib-styles-v2-icons/dist/fonts/nibdings.woff') format('woff'),
-        url('nib-styles-v2-icons/dist/fonts/nibdings.ttf') format('truetype'),
-        url('nib-styles-v2-icons/dist/fonts/nibdings.svg#nibdings') format('svg')
-    ;
+  font-family: 'nibdings';
+  font-weight: normal;
+  font-style: normal;
+  src: url('nib-styles-v2-icons/dist/fonts/nibdings.eot');
+  src:
+    url('nib-styles-v2-icons/dist/fonts/nibdings.eot?#iefix') format('eot'),
+    url('nib-styles-v2-icons/dist/fonts/nibdings.woff') format('woff'),
+    url('nib-styles-v2-icons/dist/fonts/nibdings.ttf') format('truetype'),
+    url('nib-styles-v2-icons/dist/fonts/nibdings.svg#nibdings') format('svg')
+  ;
 }
 
 
 /* === ICON === */
 
 .v2-icon {
-    display: inline-block;
-    font: normal normal normal 14px/1 'nibdings';
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    vertical-align: middle;
+  display: inline-block;
+  font: normal normal normal 14px/1 'nibdings';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
 }
 
 .v2-icon:before {
@@ -35,85 +35,85 @@
 /* TODO: USE EMs so icons scale if user agent font size larger than normal? */
 
 .v2-icon--smallest {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .v2-icon--smaller {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .v2-icon--small {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .v2-icon--medium {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 .v2-icon--large {
-    font-size: 64px;
+  font-size: 64px;
 }
 
 .v2-icon--largest {
-    font-size: 128px;
+  font-size: 128px;
 }
 
 /* === ICON: COLOUR === */
 
 .v2-icon--lightgreen {
-    color: #009623;
+  color: #009623;
 }
 
 .v2-icon--darkgreen {
-    color: #0a6d12;
+  color: #0a6d12;
 }
 
 .v2-icon--lightgrey {
-    color: #b9b9b9;
+  color: #b9b9b9;
 }
 
 .v2-icon--darkgrey {
-    color: #444;
+  color: #444;
 }
 
 .v2-icon--white {
-    color: #fff;
+  color: #fff;
 }
 
 /* === ICON: ROTATION === */
 
 .v2-icon--rotate-90 {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .v2-icon--rotate-180 {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .v2-icon--rotate-270 {
-    transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 
 /* === ICON: SPIN === */
 
 @keyframes v2-icon-spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(359deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
 }
 
 .v2-icon--spin {
-    animation: v2-icon-spin 0.75s infinite linear;
+  animation: v2-icon-spin 0.75s infinite linear;
 }
 
 /* === ICON: ALIGNMENT === */
 
 /* offset the vertical alignment by the descender height so the icon still looks centered where `text-transform: uppercase` is applied to the containing div */
 .v2-icon--offset-descenders {
-    margin-top: -0.18em;
+  margin-top: -0.18em;
 }
 
 /* === ICON: GLYPH === */
@@ -280,317 +280,317 @@ $v2-icon--youtube-circle-inverse: "\E048";
 
 
 .v2-icon--ambulance:before {
-    content: $v2-icon--ambulance
+  content: $v2-icon--ambulance
 }
 
 .v2-icon--arrow:before {
-    content: $v2-icon--arrow
+  content: $v2-icon--arrow
 }
 
 .v2-icon--calendar:before {
-    content: $v2-icon--calendar
+  content: $v2-icon--calendar
 }
 
 .v2-icon--chevron:before {
-    content: $v2-icon--chevron
+  content: $v2-icon--chevron
 }
 
 .v2-icon--chevron-circle:before {
-    content: $v2-icon--chevron-circle
+  content: $v2-icon--chevron-circle
 }
 
 .v2-icon--chevron-circle-inverse:before {
-    content: $v2-icon--chevron-circle-inverse
+  content: $v2-icon--chevron-circle-inverse
 }
 
 .v2-icon--clock:before {
-    content: $v2-icon--clock
+  content: $v2-icon--clock
 }
 
 .v2-icon--close:before {
-    content: $v2-icon--close
+  content: $v2-icon--close
 }
 
 .v2-icon--close-circle:before {
-    content: $v2-icon--close-circle
+  content: $v2-icon--close-circle
 }
 
 .v2-icon--close-circle-inverse:before {
-    content: $v2-icon--close-circle-inverse
+  content: $v2-icon--close-circle-inverse
 }
 
 .v2-icon--couple:before {
-    content: $v2-icon--couple
+  content: $v2-icon--couple
 }
 
 .v2-icon--document:before {
-    content: $v2-icon--document
+  content: $v2-icon--document
 }
 
 .v2-icon--document-inverse:before {
-    content: $v2-icon--document-inverse
+  content: $v2-icon--document-inverse
 }
 
 .v2-icon--dollar:before {
-    content: $v2-icon--dollar
+  content: $v2-icon--dollar
 }
 
 .v2-icon--dollar-circle:before {
-    content: $v2-icon--dollar-circle
+  content: $v2-icon--dollar-circle
 }
 
 .v2-icon--dollar-circle-inverse:before {
-    content: $v2-icon--dollar-circle-inverse
+  content: $v2-icon--dollar-circle-inverse
 }
 
 .v2-icon--edit:before {
-    content: $v2-icon--edit
+  content: $v2-icon--edit
 }
 
 .v2-icon--envelope:before {
-    content: $v2-icon--envelope
+  content: $v2-icon--envelope
 }
 
 .v2-icon--facebook:before {
-    content: $v2-icon--facebook
+  content: $v2-icon--facebook
 }
 
 .v2-icon--facebook-circle:before {
-    content: $v2-icon--facebook-circle
+  content: $v2-icon--facebook-circle
 }
 
 .v2-icon--facebook-circle-inverse:before {
-    content: $v2-icon--facebook-circle-inverse
+  content: $v2-icon--facebook-circle-inverse
 }
 
 .v2-icon--family:before {
-    content: $v2-icon--family
+  content: $v2-icon--family
 }
 
 .v2-icon--fax:before {
-    content: $v2-icon--fax
+  content: $v2-icon--fax
 }
 
 .v2-icon--flag:before {
-    content: $v2-icon--flag
+  content: $v2-icon--flag
 }
 
 .v2-icon--google-plus:before {
-    content: $v2-icon--google-plus
+  content: $v2-icon--google-plus
 }
 
 .v2-icon--google-plus-circle:before {
-    content: $v2-icon--google-plus-circle
+  content: $v2-icon--google-plus-circle
 }
 
 .v2-icon--google-plus-circle-inverse:before {
-    content: $v2-icon--google-plus-circle-inverse
+  content: $v2-icon--google-plus-circle-inverse
 }
 
 .v2-icon--heart:before {
-    content: $v2-icon--heart
+  content: $v2-icon--heart
 }
 
 .v2-icon--heartrate:before {
-    content: $v2-icon--heartrate
+  content: $v2-icon--heartrate
 }
 
 .v2-icon--help:before {
-    content: $v2-icon--help
+  content: $v2-icon--help
 }
 
 .v2-icon--help-circle:before {
-    content: $v2-icon--help-circle
+  content: $v2-icon--help-circle
 }
 
 .v2-icon--help-circle-inverse:before {
-    content: $v2-icon--help-circle-inverse
+  content: $v2-icon--help-circle-inverse
 }
 
 .v2-icon--hospital:before {
-    content: $v2-icon--hospital
+  content: $v2-icon--hospital
 }
 
 .v2-icon--info-circle:before {
-    content: $v2-icon--info-circle
+  content: $v2-icon--info-circle
 }
 
 .v2-icon--info-circle-inverse:before {
-    content: $v2-icon--info-circle-inverse
+  content: $v2-icon--info-circle-inverse
 }
 
 .v2-icon--instagram:before {
-    content: $v2-icon--instagram
+  content: $v2-icon--instagram
 }
 
 .v2-icon--instagram-circle:before {
-    content: $v2-icon--instagram-circle
+  content: $v2-icon--instagram-circle
 }
 
 .v2-icon--instagram-circle-inverse:before {
-    content: $v2-icon--instagram-circle-inverse
+  content: $v2-icon--instagram-circle-inverse
 }
 
 .v2-icon--location:before {
-    content: $v2-icon--location
+  content: $v2-icon--location
 }
 
 .v2-icon--lock:before {
-    content: $v2-icon--lock
+  content: $v2-icon--lock
 }
 
 .v2-icon--lock-circle-inverse:before {
-    content: $v2-icon--lock-circle-inverse
+  content: $v2-icon--lock-circle-inverse
 }
 
 .v2-icon--megaphone:before {
-    content: $v2-icon--megaphone
+  content: $v2-icon--megaphone
 }
 
 .v2-icon--menu:before {
-    content: $v2-icon--menu
+  content: $v2-icon--menu
 }
 
 .v2-icon--over-55:before {
-    content: $v2-icon--over-55
+  content: $v2-icon--over-55
 }
 
 .v2-icon--paper-clip:before {
-    content: $v2-icon--paper-clip
+  content: $v2-icon--paper-clip
 }
 
 .v2-icon--pdf:before {
-    content: $v2-icon--pdf
+  content: $v2-icon--pdf
 }
 
 .v2-icon--pdf-inverse:before {
-    content: $v2-icon--pdf-inverse
+  content: $v2-icon--pdf-inverse
 }
 
 .v2-icon--person:before {
-    content: $v2-icon--person
+  content: $v2-icon--person
 }
 
 .v2-icon--phone:before {
-    content: $v2-icon--phone
+  content: $v2-icon--phone
 }
 
 .v2-icon--plus:before {
-    content: $v2-icon--plus
+  content: $v2-icon--plus
 }
 
 .v2-icon--plus-circle:before {
-    content: $v2-icon--plus-circle
+  content: $v2-icon--plus-circle
 }
 
 .v2-icon--plus-circle-inverse:before {
-    content: $v2-icon--plus-circle-inverse
+  content: $v2-icon--plus-circle-inverse
 }
 
 .v2-icon--receipt:before {
-    content: $v2-icon--receipt
+  content: $v2-icon--receipt
 }
 
 .v2-icon--screen:before {
-    content: $v2-icon--screen
+  content: $v2-icon--screen
 }
 
 .v2-icon--settings:before {
-    content: $v2-icon--settings
+  content: $v2-icon--settings
 }
 
 .v2-icon--shopping-cart:before {
-    content: $v2-icon--shopping-cart
+  content: $v2-icon--shopping-cart
 }
 
 .v2-icon--single:before {
-    content: $v2-icon--single
+  content: $v2-icon--single
 }
 
 .v2-icon--single-parent-family:before {
-    content: $v2-icon--single-parent-family
+  content: $v2-icon--single-parent-family
 }
 
 .v2-icon--slip:before {
-    content: $v2-icon--slip
+  content: $v2-icon--slip
 }
 
 .v2-icon--smartphone:before {
-    content: $v2-icon--smartphone
+  content: $v2-icon--smartphone
 }
 
 .v2-icon--spinner:before {
-    content: $v2-icon--spinner
+  content: $v2-icon--spinner
 }
 
 .v2-icon--stethoscope:before {
-    content: $v2-icon--stethoscope
+  content: $v2-icon--stethoscope
 }
 
 .v2-icon--stopwatch:before {
-    content: $v2-icon--stopwatch
+  content: $v2-icon--stopwatch
 }
 
 .v2-icon--switching:before {
-    content: $v2-icon--switching
+  content: $v2-icon--switching
 }
 
 .v2-icon--thumbs-up:before {
-    content: $v2-icon--thumbs-up
+  content: $v2-icon--thumbs-up
 }
 
 .v2-icon--tick:before {
-    content: $v2-icon--tick
+  content: $v2-icon--tick
 }
 
 .v2-icon--tick-circle:before {
-    content: $v2-icon--tick-circle
+  content: $v2-icon--tick-circle
 }
 
 .v2-icon--tick-circle-inverse:before {
-    content: $v2-icon--tick-circle-inverse
+  content: $v2-icon--tick-circle-inverse
 }
 
 .v2-icon--tools:before {
-    content: $v2-icon--tools
+  content: $v2-icon--tools
 }
 
 .v2-icon--tooth:before {
-    content: $v2-icon--tooth
+  content: $v2-icon--tooth
 }
 
 .v2-icon--twitter:before {
-    content: $v2-icon--twitter
+  content: $v2-icon--twitter
 }
 
 .v2-icon--twitter-circle:before {
-    content: $v2-icon--twitter-circle
+  content: $v2-icon--twitter-circle
 }
 
 .v2-icon--twitter-circle-inverse:before {
-    content: $v2-icon--twitter-circle-inverse
+  content: $v2-icon--twitter-circle-inverse
 }
 
 .v2-icon--umbrella:before {
-    content: $v2-icon--umbrella
+  content: $v2-icon--umbrella
 }
 
 .v2-icon--warning:before {
-    content: $v2-icon--warning
+  content: $v2-icon--warning
 }
 
 .v2-icon--warning-inverse:before {
-    content: $v2-icon--warning-inverse
+  content: $v2-icon--warning-inverse
 }
 
 .v2-icon--youtube:before {
-    content: $v2-icon--youtube
+  content: $v2-icon--youtube
 }
 
 .v2-icon--youtube-circle:before {
-    content: $v2-icon--youtube-circle
+  content: $v2-icon--youtube-circle
 }
 
 .v2-icon--youtube-circle-inverse:before {
-    content: $v2-icon--youtube-circle-inverse
+  content: $v2-icon--youtube-circle-inverse
 }
