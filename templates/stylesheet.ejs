@@ -26,35 +26,50 @@
   vertical-align: middle;
 }
 
-.<%= className %>:before {
-}
+/* === ICON: VARIABLES === */
+
+//icon font family variable
+$<%= className %>--font-family: '<%= fontName %>';
+
+//icon size variables
+$<%= className %>--smallest:  16px;
+$<%= className %>--smaller:   24px;
+$<%= className %>--small:     32px;
+$<%= className %>--medium:    48px;
+$<%= className %>--large:     64px;
+$<%= className %>--largest:   128px;
+
+//icon glyph variables
+<% glyphs.forEach( function(glyph) { %>
+$<%= className %>--<%= glyph.name %>: <%- glyph.code %>;
+<% }); %>
 
 /* === ICON: SIZE === */
 
 /* TODO: USE EMs so icons scale if user agent font size larger than normal? */
 
 .<%= className %>--smallest {
-  font-size: 16px;
+  font-size: $<%= className %>--smallest;
 }
 
 .<%= className %>--smaller {
-  font-size: 24px;
+  font-size: $<%= className %>--smaller;
 }
 
 .<%= className %>--small {
-  font-size: 32px;
+  font-size: $<%= className %>--small;
 }
 
 .<%= className %>--medium {
-  font-size: 48px;
+  font-size: $<%= className %>--medium;
 }
 
 .<%= className %>--large {
-  font-size: 64px;
+  font-size: $<%= className %>--large;
 }
 
 .<%= className %>--largest {
-  font-size: 128px;
+  font-size: $<%= className %>--largest;
 }
 
 /* === ICON: COLOUR === */
@@ -116,14 +131,6 @@
 }
 
 /* === ICON: GLYPH === */
-
-//icon font family
-$v2-icon--font-family: '<%= fontName %>';
-
-//icon variables
-<% glyphs.forEach( function(glyph) { %>
-$<%= className %>--<%= glyph.name %>: <%- glyph.code %>;
-<% }); %>
 
 //icon classes
 <% glyphs.forEach( function(glyph) { %>

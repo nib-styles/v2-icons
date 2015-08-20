@@ -17,6 +17,7 @@
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle; }
 
+/* === ICON: VARIABLES === */
 /* === ICON: SIZE === */
 /* TODO: USE EMs so icons scale if user agent font size larger than normal? */
 .v2-icon--smallest {

@@ -26,101 +26,20 @@
   vertical-align: middle;
 }
 
-.v2-icon:before {
-}
+/* === ICON: VARIABLES === */
 
-/* === ICON: SIZE === */
-
-/* TODO: USE EMs so icons scale if user agent font size larger than normal? */
-
-.v2-icon--smallest {
-  font-size: 16px;
-}
-
-.v2-icon--smaller {
-  font-size: 24px;
-}
-
-.v2-icon--small {
-  font-size: 32px;
-}
-
-.v2-icon--medium {
-  font-size: 48px;
-}
-
-.v2-icon--large {
-  font-size: 64px;
-}
-
-.v2-icon--largest {
-  font-size: 128px;
-}
-
-/* === ICON: COLOUR === */
-
-.v2-icon--lightgreen {
-  color: #009623;
-}
-
-.v2-icon--darkgreen {
-  color: #0a6d12;
-}
-
-.v2-icon--lightgrey {
-  color: #b9b9b9;
-}
-
-.v2-icon--darkgrey {
-  color: #444;
-}
-
-.v2-icon--white {
-  color: #fff;
-}
-
-/* === ICON: ROTATION === */
-
-.v2-icon--rotate-90 {
-  transform: rotate(90deg);
-}
-
-.v2-icon--rotate-180 {
-  transform: rotate(180deg);
-}
-
-.v2-icon--rotate-270 {
-  transform: rotate(270deg);
-}
-
-/* === ICON: SPIN === */
-
-@keyframes v2-icon-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
-}
-
-.v2-icon--spin {
-  animation: v2-icon-spin 0.75s infinite linear;
-}
-
-/* === ICON: ALIGNMENT === */
-
-/* offset the vertical alignment by the descender height so the icon still looks centered where `text-transform: uppercase` is applied to the containing div */
-.v2-icon--offset-descenders {
-  margin-top: -0.18em;
-}
-
-/* === ICON: GLYPH === */
-
-//icon font family
+//icon font family variable
 $v2-icon--font-family: 'nibdings';
 
-//icon variables
+//icon size variables
+$v2-icon--smallest:  16px;
+$v2-icon--smaller:   24px;
+$v2-icon--small:     32px;
+$v2-icon--medium:    48px;
+$v2-icon--large:     64px;
+$v2-icon--largest:   128px;
+
+//icon glyph variables
 
 $v2-icon--ambulance: "\E023";
 
@@ -280,6 +199,94 @@ $v2-icon--youtube-circle: "\E049";
 
 $v2-icon--youtube-circle-inverse: "\E048";
 
+
+/* === ICON: SIZE === */
+
+/* TODO: USE EMs so icons scale if user agent font size larger than normal? */
+
+.v2-icon--smallest {
+  font-size: $v2-icon--smallest;
+}
+
+.v2-icon--smaller {
+  font-size: $v2-icon--smaller;
+}
+
+.v2-icon--small {
+  font-size: $v2-icon--small;
+}
+
+.v2-icon--medium {
+  font-size: $v2-icon--medium;
+}
+
+.v2-icon--large {
+  font-size: $v2-icon--large;
+}
+
+.v2-icon--largest {
+  font-size: $v2-icon--largest;
+}
+
+/* === ICON: COLOUR === */
+
+.v2-icon--lightgreen {
+  color: #009623;
+}
+
+.v2-icon--darkgreen {
+  color: #0a6d12;
+}
+
+.v2-icon--lightgrey {
+  color: #b9b9b9;
+}
+
+.v2-icon--darkgrey {
+  color: #444;
+}
+
+.v2-icon--white {
+  color: #fff;
+}
+
+/* === ICON: ROTATION === */
+
+.v2-icon--rotate-90 {
+  transform: rotate(90deg);
+}
+
+.v2-icon--rotate-180 {
+  transform: rotate(180deg);
+}
+
+.v2-icon--rotate-270 {
+  transform: rotate(270deg);
+}
+
+/* === ICON: SPIN === */
+
+@keyframes v2-icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.v2-icon--spin {
+  animation: v2-icon-spin 0.75s infinite linear;
+}
+
+/* === ICON: ALIGNMENT === */
+
+/* offset the vertical alignment by the descender height so the icon still looks centered where `text-transform: uppercase` is applied to the containing div */
+.v2-icon--offset-descenders {
+  margin-top: -0.18em;
+}
+
+/* === ICON: GLYPH === */
 
 //icon classes
 
