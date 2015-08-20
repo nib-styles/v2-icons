@@ -22,6 +22,10 @@ See the [pattern library](http://nib-pattern-library.azurewebsites.net/pages/ico
  
 ## Adding a new icon
 
+<span style="color:red;">
+**Before adding your icon, please consult with the designers to ensure the icon is a standard and will be used across the teams!!!**
+</span>
+
 Add your `*.svg` to the `icons/` directory
 
 Install the nodejs modules required for building:
