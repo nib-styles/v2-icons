@@ -1,356 +1,257 @@
-
+@charset "UTF-8";
 /* === FONT FACE === */
-
 @font-face {
-    font-family: 'nibdings';
-    font-weight: normal;
-    font-style: normal;
-    src: url('./fonts/nibdings.eot');
-    src:
-        url('./fonts/nibdings.eot?#iefix') format('eot'),
-        url('./fonts/nibdings.woff') format('woff'),
-        url('./fonts/nibdings.ttf') format('truetype'),
-        url('./fonts/nibdings.svg#nibdings') format('svg')
-    ;
-}
-
+  font-family: 'nibdings';
+  font-weight: normal;
+  font-style: normal;
+  src: url("./fonts/nibdings.eot");
+  src: url("./fonts/nibdings.eot?#iefix") format("eot"), url("./fonts/nibdings.woff") format("woff"), url("./fonts/nibdings.ttf") format("truetype"), url("./fonts/nibdings.svg#nibdings") format("svg"); }
 
 /* === ICON === */
-
 .v2-icon {
-    display: inline-block;
-    font: normal normal normal 14px/1 'nibdings';
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    vertical-align: middle;
-}
-
-.v2-icon:before {
-}
+  display: inline-block;
+  font: normal normal normal 14px/1 "nibdings";
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle; }
 
 /* === ICON: SIZE === */
-
 /* TODO: USE EMs so icons scale if user agent font size larger than normal? */
-
 .v2-icon--smallest {
-    font-size: 16px;
-}
+  font-size: 16px; }
 
 .v2-icon--smaller {
-    font-size: 24px;
-}
+  font-size: 24px; }
 
 .v2-icon--small {
-    font-size: 32px;
-}
+  font-size: 32px; }
 
 .v2-icon--medium {
-    font-size: 48px;
-}
+  font-size: 48px; }
 
 .v2-icon--large {
-    font-size: 64px;
-}
+  font-size: 64px; }
 
 .v2-icon--largest {
-    font-size: 128px;
-}
+  font-size: 128px; }
 
 /* === ICON: COLOUR === */
-
 .v2-icon--lightgreen {
-    color: #009623;
-}
+  color: #009623; }
 
 .v2-icon--darkgreen {
-    color: #0a6d12;
-}
+  color: #0a6d12; }
 
 .v2-icon--lightgrey {
-    color: #b9b9b9;
-}
+  color: #b9b9b9; }
 
 .v2-icon--darkgrey {
-    color: #444;
-}
+  color: #444; }
 
 .v2-icon--white {
-    color: #fff;
-}
+  color: #fff; }
 
 /* === ICON: ROTATION === */
-
 .v2-icon--rotate-90 {
-    transform: rotate(90deg);
-}
+  transform: rotate(90deg); }
 
 .v2-icon--rotate-180 {
-    transform: rotate(180deg);
-}
+  transform: rotate(180deg); }
 
 .v2-icon--rotate-270 {
-    transform: rotate(270deg);
-}
+  transform: rotate(270deg); }
 
 /* === ICON: SPIN === */
-
 @keyframes v2-icon-spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(359deg);
-    }
-}
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(359deg); } }
 
 .v2-icon--spin {
-    animation: v2-icon-spin 0.75s infinite linear;
-}
+  animation: v2-icon-spin 0.75s infinite linear; }
 
 /* === ICON: ALIGNMENT === */
-
 /* offset the vertical alignment by the descender height so the icon still looks centered where `text-transform: uppercase` is applied to the containing div */
 .v2-icon--offset-descenders {
-    margin-top: -0.18em;
-}
+  margin-top: -0.18em; }
 
 /* === ICON: GLYPH === */
-
-
 .v2-icon--ambulance:before {
-    content: "\E023"
-}
+  content: ""; }
 
 .v2-icon--arrow:before {
-    content: "\E01F"
-}
+  content: ""; }
 
 .v2-icon--calendar:before {
-    content: "\E001"
-}
+  content: ""; }
 
 .v2-icon--chevron:before {
-    content: "\E022"
-}
+  content: ""; }
 
 .v2-icon--chevron-circle:before {
-    content: "\E021"
-}
+  content: ""; }
 
 .v2-icon--chevron-circle-inverse:before {
-    content: "\E020"
-}
+  content: ""; }
 
 .v2-icon--clock:before {
-    content: "\E024"
-}
+  content: ""; }
 
 .v2-icon--close:before {
-    content: "\E004"
-}
+  content: ""; }
 
 .v2-icon--close-circle:before {
-    content: "\E003"
-}
+  content: ""; }
 
 .v2-icon--close-circle-inverse:before {
-    content: "\E002"
-}
+  content: ""; }
 
 .v2-icon--document:before {
-    content: "\E006"
-}
+  content: ""; }
 
 .v2-icon--document-inverse:before {
-    content: "\E005"
-}
+  content: ""; }
 
 .v2-icon--dollar:before {
-    content: "\E028"
-}
+  content: ""; }
 
 .v2-icon--dollar-circle:before {
-    content: "\E027"
-}
+  content: ""; }
 
 .v2-icon--dollar-circle-inverse:before {
-    content: "\E026"
-}
+  content: ""; }
 
 .v2-icon--edit:before {
-    content: "\E007"
-}
+  content: ""; }
 
 .v2-icon--envelope:before {
-    content: "\E008"
-}
+  content: ""; }
 
 .v2-icon--fax:before {
-    content: "\E038"
-}
+  content: ""; }
 
 .v2-icon--flag:before {
-    content: "\E02A"
-}
+  content: ""; }
 
 .v2-icon--heart:before {
-    content: "\E03E"
-}
+  content: ""; }
 
 .v2-icon--heartrate:before {
-    content: "\E02B"
-}
+  content: ""; }
 
 .v2-icon--help:before {
-    content: "\E00B"
-}
+  content: ""; }
 
 .v2-icon--help-circle:before {
-    content: "\E00A"
-}
+  content: ""; }
 
 .v2-icon--help-circle-inverse:before {
-    content: "\E009"
-}
+  content: ""; }
 
 .v2-icon--hospital:before {
-    content: "\E02C"
-}
+  content: ""; }
 
 .v2-icon--info-circle:before {
-    content: "\E00D"
-}
+  content: ""; }
 
 .v2-icon--info-circle-inverse:before {
-    content: "\E00C"
-}
+  content: ""; }
 
 .v2-icon--location:before {
-    content: "\E00E"
-}
+  content: ""; }
 
 .v2-icon--lock:before {
-    content: "\E010"
-}
+  content: ""; }
 
 .v2-icon--lock-circle-inverse:before {
-    content: "\E00F"
-}
+  content: ""; }
 
 .v2-icon--megaphone:before {
-    content: "\E02D"
-}
+  content: ""; }
 
 .v2-icon--menu:before {
-    content: "\E011"
-}
+  content: ""; }
 
 .v2-icon--paper-clip:before {
-    content: "\E02E"
-}
+  content: ""; }
 
 .v2-icon--pdf:before {
-    content: "\E013"
-}
+  content: ""; }
 
 .v2-icon--pdf-inverse:before {
-    content: "\E012"
-}
+  content: ""; }
 
 .v2-icon--person:before {
-    content: "\E037"
-}
+  content: ""; }
 
 .v2-icon--phone:before {
-    content: "\E014"
-}
+  content: ""; }
 
 .v2-icon--plus:before {
-    content: "\E017"
-}
+  content: ""; }
 
 .v2-icon--plus-circle:before {
-    content: "\E016"
-}
+  content: ""; }
 
 .v2-icon--plus-circle-inverse:before {
-    content: "\E015"
-}
+  content: ""; }
 
 .v2-icon--receipt:before {
-    content: "\E03A"
-}
+  content: ""; }
 
 .v2-icon--screen:before {
-    content: "\E03B"
-}
+  content: ""; }
 
 .v2-icon--settings:before {
-    content: "\E02F"
-}
+  content: ""; }
 
 .v2-icon--shopping-cart:before {
-    content: "\E018"
-}
+  content: ""; }
 
 .v2-icon--slip:before {
-    content: "\E03C"
-}
+  content: ""; }
 
 .v2-icon--smartphone:before {
-    content: "\E019"
-}
+  content: ""; }
 
 .v2-icon--spinner:before {
-    content: "\E036"
-}
+  content: ""; }
 
 .v2-icon--stethoscope:before {
-    content: "\E025"
-}
+  content: ""; }
 
 .v2-icon--stopwatch:before {
-    content: "\E031"
-}
+  content: ""; }
 
 .v2-icon--switching:before {
-    content: "\E032"
-}
+  content: ""; }
 
 .v2-icon--thumbs-up:before {
-    content: "\E033"
-}
+  content: ""; }
 
 .v2-icon--tick:before {
-    content: "\E01C"
-}
+  content: ""; }
 
 .v2-icon--tick-circle:before {
-    content: "\E01B"
-}
+  content: ""; }
 
 .v2-icon--tick-circle-inverse:before {
-    content: "\E01A"
-}
+  content: ""; }
 
 .v2-icon--tools:before {
-    content: "\E034"
-}
+  content: ""; }
 
 .v2-icon--tooth:before {
-    content: "\E03D"
-}
+  content: ""; }
 
 .v2-icon--umbrella:before {
-    content: "\E035"
-}
+  content: ""; }
 
 .v2-icon--warning:before {
-    content: "\E01E"
-}
+  content: ""; }
 
 .v2-icon--warning-inverse:before {
-    content: "\E01D"
-}
+  content: ""; }

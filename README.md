@@ -40,7 +40,7 @@ The above rules were chosen in order to meet the following use cases:
 
 ![Icon in a button](doc/use-case-btn.png?raw=true)
 
-Where the center of an icon should be in line with the center of some text e.g. an icon in a button. For this to look good icons must be vertically centered or make use of the full height.
+Where the center of an icon should be in line with the center of some text e.g. an icon in a button. For this to look good icons must be vertically centered or make use of the full height. Icons that are vertically centered will look smaller than those that 
 
 ### Horizontal list
 

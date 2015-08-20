@@ -1,11 +1,14 @@
 var gulp        = require('gulp');
 var sequence    = require('run-sequence');
 
+var fs          = require('fs');
+var async       = require('async');
 var rimraf      = require('rimraf');
 var mkdirp      = require('mkdirp');
-var rename      = require('gulp-rename');
 var iconfont    = require('gulp-iconfont');
-var consolidate = require('gulp-consolidate');
+var consolidate = require('consolidate');
+var sass        = require('node-sass');
+
 var Pageres     = require('pageres');
 var open        = require('open');
 var ttfpatch    = require('nodeTTFPatch');
@@ -18,6 +21,25 @@ var
   CLASS_NAME     = 'v2-icon',
   SCREENSHOT_DIR = 'dist/screenshots'
 ;
+
+function renderTemplate(src, dst, data, callback) {
+  consolidate
+    .ejs(src, data)
+    .then(function(html) {
+      fs.writeFile(dst, html, callback);
+    })
+    .catch(function(err) {
+      callback(err);
+    })
+  ;
+}
+
+function renderScss(src, dst, callback) {
+  sass.render({file: src}, function(err, result) {
+    if (err) return callback(err);
+    fs.writeFile(dst, result.css, callback);
+  });
+}
 
 gulp.task('clean--stylesheet', function(cb) {
   rimraf('dist/index.css', function(){
@@ -37,7 +59,7 @@ gulp.task('mkdir--fonts', function(cb) {
   mkdirp(FONT_DIR, cb);
 });
 
-gulp.task('build--fonts', function(cb) {
+gulp.task('build--fonts', function(done) {
   gulp.src([SRC_DIR+'/*.*', SRC_DIR+'/**/*.*'])
     .pipe(iconfont({
       fontName:         FONT_NAME,
@@ -48,43 +70,33 @@ gulp.task('build--fonts', function(cb) {
     }))
     .on('codepoints', function(codepoints, options) {
 
-      //generate an icon stylesheet from a template
-      gulp.src('templates/stylesheet.ejs')
-        .pipe(consolidate('ejs', {
-          glyphs:     codepoints,
-          fontName:   options.fontName,
-          fontPath:   './fonts',
-          className:  CLASS_NAME
-        }))
-        .pipe(rename('index.css'))
-        .pipe(gulp.dest('./dist'))
-      ;
+      var data = {
+        glyphs:     codepoints,
+        fontName:   options.fontName,
+        fontPath:   './fonts',
+        className:  CLASS_NAME
+      };
 
-      //generate a SASS version icon stylesheet from a template
-      gulp.src('templates/stylesheet.ejs')
-        .pipe(consolidate('ejs', {
-          glyphs:     codepoints,
-          fontName:   options.fontName,
-          fontPath:   SASS_FONT_DIR,
-          className:  CLASS_NAME
-        }))
-        .pipe(rename('index.scss'))
-        .pipe(gulp.dest('./dist/'))
-      ;
+      async.parallel(
+        [
 
-      //generate an icon listing from a template
-      gulp.src('templates/example.ejs')
-        .pipe(consolidate('ejs', {
-          glyphs:     codepoints,
-          fontName:   options.fontName,
-          fontPath:   FONT_DIR,
-          className:  CLASS_NAME
-        }))
-        .pipe(rename('example.html'))
-        .pipe(gulp.dest('./dist'))
-      ;
+          //generate a scss and css files from a template
+          function(done) {
+            renderTemplate('./templates/stylesheet.ejs', './dist/index.scss', data, function(err) {
+              if (err) return done(err);
+              renderScss('./dist/index.scss', './dist/index.css', done)
+            });
+          },
 
-      setTimeout(cb, 1000);//FIXME: Yuck! It still won't be finished when we get to here.
+          //generate a listing from a template
+          function(done) {
+            renderTemplate('./templates/listing.ejs', './dist/listing.html', data, done);
+          }
+
+        ],
+        done
+      );
+
     })
     .pipe(gulp.dest(FONT_DIR))
   ;
