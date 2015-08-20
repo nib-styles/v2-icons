@@ -1,7 +1,7 @@
 {
   "name": "v2-icons",
   "styles": [
-    "dist/index.css"
+    "dist/compiled.css"
   ],
   "files": [
     "dist/index.scss",

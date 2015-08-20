@@ -1,7 +1,7 @@
 {
   "name": "@nib-styles/v2-icons",
   "version": "2.4.0",
-  "main.css": "dist/index.css",
+  "main.css": "dist/compiled.css",
   "devDependencies": {
     "async": "^1.4.2",
     "ejs": "^2.3.3",
@@ -18,5 +18,9 @@
   },
   "dependencies": {
     "iconfont-glyphs-map": "^0.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nib-styles/v2-icons"
   }
 }

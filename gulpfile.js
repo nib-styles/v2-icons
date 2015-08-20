@@ -70,7 +70,6 @@ gulp.task('build--fonts', function(done) {
       log:              false //replace with `function() {}` to disable logging
     }))
     .on('glyphs', function(glyphs, options) {
-
       var glyphMap = glyphsMap.array(glyphs, '\\', true);
 
       var data = {
@@ -80,15 +79,27 @@ gulp.task('build--fonts', function(done) {
         className:  CLASS_NAME
       };
 
+      var legacyData = {
+        glyphs:     glyphMap,
+        fontName:   options.fontName,
+        fontPath:   'nib-styles-v2-icons/dist/fonts',
+        className:  CLASS_NAME
+      };
+
       async.parallel(
         [
 
           //generate a scss and css files from a template
           function(done) {
-            renderTemplate('./templates/stylesheet.ejs', './dist/index.scss', data, function(err) {
+            renderTemplate('./templates/stylesheet.ejs', './dist/compiled.scss', data, function(err) {
               if (err) return done(err);
-              renderScss('./dist/index.scss', './dist/index.css', done)
+              renderScss('./dist/compiled.scss', './dist/compiled.css', done)
             });
+          },
+
+          //generate a legacy scss from a template
+          function(done) {
+            renderTemplate('./templates/stylesheet.ejs', './dist/index.scss', legacyData, done);
           },
 
           //generate a listing from a template
