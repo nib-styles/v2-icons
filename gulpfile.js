@@ -70,10 +70,30 @@ gulp.task('build--fonts', function(done) {
       log:              false //replace with `function() {}` to disable logging
     }))
     .on('glyphs', function(glyphs, options) {
-      var glyphMap = glyphsMap.array(glyphs, '\\', true);
+
+      var glyphMap = glyphsMap(glyphs, '\\', true);
+
+      var sizeMap = {
+        smallest:     16,
+        smaller:      24,
+        small:        32,
+        medium:       48,
+        large:        64,
+        largest:      128
+      };
+
+      var colorMap = {
+        lightgreen:   '#009623',
+        darkgreen:    '#0a6d12',
+        lightgrey:    '#b9b9b9',
+        darkgrey:     '#444',
+        white:        '#fff'
+      };
 
       var data = {
         glyphs:     glyphMap,
+        sizes:      sizeMap,
+        colors:     colorMap,
         fontName:   options.fontName,
         fontPath:   './fonts',
         className:  CLASS_NAME
@@ -81,6 +101,8 @@ gulp.task('build--fonts', function(done) {
 
       var legacyData = {
         glyphs:     glyphMap,
+        sizes:      sizeMap,
+        colors:     colorMap,
         fontName:   options.fontName,
         fontPath:   'nib-styles-v2-icons/dist/fonts',
         className:  CLASS_NAME
@@ -91,21 +113,24 @@ gulp.task('build--fonts', function(done) {
 
           //generate a scss and css files from a template
           function(done) {
-            renderTemplate('./templates/stylesheet.ejs', './dist/compiled.scss', data, function(err) {
+            renderTemplate('./templates/mixin.ejs', './dist/mixin.scss', data, function(err) {
               if (err) return done(err);
-              renderScss('./dist/compiled.scss', './dist/compiled.css', done)
+              renderTemplate('./templates/compiled.ejs', './dist/compiled.scss', data, function(err) {
+                if (err) return done(err);
+                renderScss('./dist/compiled.scss', './dist/compiled.css', done)
+              });
             });
           },
 
           //generate a legacy scss from a template
           function(done) {
-            renderTemplate('./templates/stylesheet.ejs', './dist/index.scss', legacyData, done);
+            renderTemplate('./templates/legacy.ejs', './dist/legacy.scss', legacyData, done);
           },
 
           //generate a listing from a template
           function(done) {
-            renderTemplate('./templates/listing.ejs', './dist/listing.html', data, done);
-          }
+          renderTemplate('./templates/listing.ejs', './dist/listing.html', data, done);
+        }
 
         ],
         done

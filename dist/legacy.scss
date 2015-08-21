@@ -1,4 +1,18 @@
-@import "./mixin";
+
+/* === FONT FACE === */
+
+@font-face {
+  font-family: 'nibdings';
+  font-weight: normal;
+  font-style: normal;
+  src: url('nib-styles-v2-icons/dist/fonts/nibdings.eot');
+  src:
+    url('nib-styles-v2-icons/dist/fonts/nibdings.eot?#iefix') format('eot'),
+    url('nib-styles-v2-icons/dist/fonts/nibdings.woff') format('woff'),
+    url('nib-styles-v2-icons/dist/fonts/nibdings.ttf') format('truetype'),
+    url('nib-styles-v2-icons/dist/fonts/nibdings.svg#nibdings') format('svg')
+  ;
+}
 
 /* === ICON === */
 
@@ -104,6 +118,7 @@
 
 /* === ICON: GLYPH === */
 
+//icon classes
 
 .v2-icon--calendar:before {
   content: "\E001"
@@ -420,4 +435,3 @@
 .v2-icon--heart:before {
   content: "\E03E"
 }
-

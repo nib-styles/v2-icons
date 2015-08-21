@@ -26,73 +26,23 @@
   vertical-align: middle;
 }
 
-/* === ICON: VARIABLES === */
-
-//icon font family variable
-$<%= className %>--font-family: '<%= fontName %>';
-
-//icon size variables
-$<%= className %>--smallest:  16px;
-$<%= className %>--smaller:   24px;
-$<%= className %>--small:     32px;
-$<%= className %>--medium:    48px;
-$<%= className %>--large:     64px;
-$<%= className %>--largest:   128px;
-
-//icon glyph variables
-<% glyphs.forEach( function(glyph) { %>
-$<%= className %>--<%= glyph.name %>: <%- glyph.code %>;
-<% }); %>
-
 /* === ICON: SIZE === */
 
 /* TODO: USE EMs so icons scale if user agent font size larger than normal? */
 
-.<%= className %>--smallest {
-  font-size: $<%= className %>--smallest;
+<% Object.keys(sizes).forEach(function(name) { %>
+.<%= className %>--<%= name %> {
+  font-size: <%= sizes[name] %>px;
 }
-
-.<%= className %>--smaller {
-  font-size: $<%= className %>--smaller;
-}
-
-.<%= className %>--small {
-  font-size: $<%= className %>--small;
-}
-
-.<%= className %>--medium {
-  font-size: $<%= className %>--medium;
-}
-
-.<%= className %>--large {
-  font-size: $<%= className %>--large;
-}
-
-.<%= className %>--largest {
-  font-size: $<%= className %>--largest;
-}
+<% }) %>
 
 /* === ICON: COLOUR === */
 
-.<%= className %>--lightgreen {
-  color: #009623;
+<% Object.keys(colors).forEach(function(name) { %>
+.<%= className %>--<%= name %> {
+  color: <%= colors[name] %>;
 }
-
-.<%= className %>--darkgreen {
-  color: #0a6d12;
-}
-
-.<%= className %>--lightgrey {
-  color: #b9b9b9;
-}
-
-.<%= className %>--darkgrey {
-  color: #444;
-}
-
-.<%= className %>--white {
-  color: #fff;
-}
+<% }) %>
 
 /* === ICON: ROTATION === */
 
@@ -133,8 +83,8 @@ $<%= className %>--<%= glyph.name %>: <%- glyph.code %>;
 /* === ICON: GLYPH === */
 
 //icon classes
-<% glyphs.forEach( function(glyph) { %>
-.<%= className %>--<%= glyph.name %>:before {
-  content: $<%= className %>--<%= glyph.name %>
+<% Object.keys(glyphs).forEach(function(name) { %>
+.<%= className %>--<%= name %>:before {
+  content: <%- glyphs[name] %>
 }
 <% }); %>
