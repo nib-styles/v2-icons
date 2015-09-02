@@ -4,7 +4,7 @@
     "dist/compiled.css"
   ],
   "files": [
-    "dist/index.scss",
+    "dist/legacy.scss",
     "dist/fonts/nibdings.eot",
     "dist/fonts/nibdings.svg",
     "dist/fonts/nibdings.ttf",
