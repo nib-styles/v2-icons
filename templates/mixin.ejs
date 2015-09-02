@@ -1,0 +1,93 @@
+
+// === FONT FACE ===
+
+@font-face {
+  font-family: '<%= fontName %>';
+  font-weight: normal;
+  font-style: normal;
+  src: url('<%= fontPath %>/<%= fontName %>.eot');
+  src:
+    url('<%= fontPath %>/<%= fontName %>.eot?#iefix') format('eot'),
+    url('<%= fontPath %>/<%= fontName %>.woff') format('woff'),
+    url('<%= fontPath %>/<%= fontName %>.ttf') format('truetype'),
+    url('<%= fontPath %>/<%= fontName %>.svg#<%= fontName %>') format('svg')
+  ;
+}
+
+// === ICON: VARIABLES ===
+
+$v2-icon-sizes: (
+<%- Object.keys(sizes).map(function(name) {
+  return '"'+name+'": '+sizes[name]+'px';
+}).join(',\n'); %>
+);
+
+$v2-icon-colors: (
+<%- Object.keys(colors).map(function(name) {
+  return '"'+name+'": '+colors[name];
+}).join(',\n'); %>
+);
+
+$v2-icon-glyphs: (
+<%- Object.keys(glyphs).map(function(name) {
+  return '"'+name+'": '+glyphs[name];
+}).join(',\n'); %>
+);
+
+@mixin v2-icon($name, $size: null, $color: null, $rotate: 0, $offset-descenders: false, $after: false) {
+
+  $pseudo: if($after, 'after', 'before');
+
+  &:#{$pseudo} {
+
+    font-family: 'nibdings';
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+
+    //glyph
+    @if (map-has-key($v2-icon-glyphs, $name)) {
+      content: map-get($v2-icon-glyphs, $name);
+    } @else {
+      @error 'v2-icon: Icon name "#{$name}" is invalid.';
+    }
+
+    //size
+    @if ($size != null) {
+      @if (map-has-key($v2-icon-sizes, $size)) {
+        font-size: map-get($v2-icon-sizes, $size);
+      } @else {
+        @error 'v2-icon: Icon size "#{$size}" is invalid.';
+      }
+    }
+
+    //color
+    @if ($color != null) {
+      @if (map-has-key($v2-icon-colors, $color)) {
+        color: map-get($v2-icon-colors, $color);
+      } @else {
+        @error 'v2-icon: Icon color "#{$color}" is invalid.';
+      }
+    }
+
+    //rotation
+    @if (type-of($rotate) == 'number') {
+      @if ($rotate != 0) {
+        display: inline-block;
+        transform: rotate(#{$rotate}deg);
+      }
+    } @else {
+      @error 'v2-icon: Icon rotation "#{$rotate}" is invalid.';
+    }
+
+    //offset the vertical alignment by the descender height so the icon still looks centered where `text-transform: uppercase` is applied to the containing div
+    @if($offset-descenders) {
+      margin-top: -0.18em;
+    }
+
+    @content;
+
+  }
+
+}

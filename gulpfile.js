@@ -1,11 +1,15 @@
 var gulp        = require('gulp');
 var sequence    = require('run-sequence');
 
+var fs          = require('fs');
+var async       = require('async');
 var rimraf      = require('rimraf');
 var mkdirp      = require('mkdirp');
-var rename      = require('gulp-rename');
 var iconfont    = require('gulp-iconfont');
-var consolidate = require('gulp-consolidate');
+var glyphsMap   = require('iconfont-glyphs-map');
+var consolidate = require('consolidate');
+var sass        = require('node-sass');
+
 var Pageres     = require('pageres');
 var open        = require('open');
 var ttfpatch    = require('nodeTTFPatch');
@@ -13,11 +17,29 @@ var ttfpatch    = require('nodeTTFPatch');
 var
   SRC_DIR        = './icons',
   FONT_DIR       = './dist/fonts',
-  SASS_FONT_DIR  = 'nib-styles-v2-icons/dist/fonts',
   FONT_NAME      = 'nibdings',
   CLASS_NAME     = 'v2-icon',
-  SCREENSHOT_DIR = 'dist/screenshots'
+  SCREENSHOT_DIR = './dist/screenshots'
 ;
+
+function renderTemplate(src, dst, data, callback) {
+  consolidate
+    .ejs(src, data)
+    .then(function(html) {
+      fs.writeFile(dst, html, {encoding: 'utf8'}, callback);
+    })
+    .catch(function(err) {
+      callback(err);
+    })
+  ;
+}
+
+function renderScss(src, dst, callback) {
+  sass.render({file: src}, function(err, result) {
+    if (err) return callback(err);
+    fs.writeFile(dst, result.css, {encoding: 'utf8'}, callback);
+  });
+}
 
 gulp.task('clean--stylesheet', function(cb) {
   rimraf('dist/index.css', function(){
@@ -37,61 +59,90 @@ gulp.task('mkdir--fonts', function(cb) {
   mkdirp(FONT_DIR, cb);
 });
 
-gulp.task('build--fonts', function(cb) {
-  gulp.src([SRC_DIR+'/*.*', SRC_DIR+'/**/*.*'])
+gulp.task('build--fonts', function(done) {
+  gulp.src(SRC_DIR+'/**/*.svg')
     .pipe(iconfont({
       fontName:         FONT_NAME,
-      appendCodepoints: true,
+      formats: ['eot', 'svg', 'ttf', 'woff'],
+      appendUnicode:    true,
       fontHeight:       1000, //magic number to fix curve rendering problem see: https://github.com/fontello/svg2ttf/issues/18
       normalize:        true,
       log:              false //replace with `function() {}` to disable logging
     }))
-    .on('codepoints', function(codepoints, options) {
+    .on('glyphs', function(glyphs, options) {
 
-      //generate an icon stylesheet from a template
-      gulp.src('templates/stylesheet.ejs')
-        .pipe(consolidate('ejs', {
-          glyphs:     codepoints,
-          fontName:   options.fontName,
-          fontPath:   './fonts',
-          className:  CLASS_NAME
-        }))
-        .pipe(rename('index.css'))
-        .pipe(gulp.dest('./dist'))
-      ;
+      var glyphMap = glyphsMap(glyphs, '\\', true);
 
-      //generate a SASS version icon stylesheet from a template
-      gulp.src('templates/stylesheet.ejs')
-        .pipe(consolidate('ejs', {
-          glyphs:     codepoints,
-          fontName:   options.fontName,
-          fontPath:   SASS_FONT_DIR,
-          className:  CLASS_NAME
-        }))
-        .pipe(rename('index.scss'))
-        .pipe(gulp.dest('./dist/'))
-      ;
+      var sizeMap = {
+        smallest:     16,
+        smaller:      24,
+        small:        32,
+        medium:       48,
+        large:        64,
+        largest:      128
+      };
 
-      //generate an icon listing from a template
-      gulp.src('templates/example.ejs')
-        .pipe(consolidate('ejs', {
-          glyphs:     codepoints,
-          fontName:   options.fontName,
-          fontPath:   FONT_DIR,
-          className:  CLASS_NAME
-        }))
-        .pipe(rename('example.html'))
-        .pipe(gulp.dest('./dist'))
-      ;
+      var colorMap = {
+        lightgreen:   '#009623',
+        darkgreen:    '#0a6d12',
+        lightgrey:    '#b9b9b9',
+        darkgrey:     '#444',
+        white:        '#fff'
+      };
 
-      setTimeout(cb, 1000);//FIXME: Yuck! It still won't be finished when we get to here.
+      var data = {
+        glyphs:     glyphMap,
+        sizes:      sizeMap,
+        colors:     colorMap,
+        fontName:   options.fontName,
+        fontPath:   './fonts',
+        className:  CLASS_NAME
+      };
+
+      var legacyData = {
+        glyphs:     glyphMap,
+        sizes:      sizeMap,
+        colors:     colorMap,
+        fontName:   options.fontName,
+        fontPath:   'nib-styles-v2-icons/dist/fonts',
+        className:  CLASS_NAME
+      };
+
+      async.parallel(
+        [
+
+          //generate a scss and css files from a template
+          function(done) {
+            renderTemplate('./templates/mixin.ejs', './dist/mixin.scss', data, function(err) {
+              if (err) return done(err);
+              renderTemplate('./templates/compiled.ejs', './dist/compiled.scss', data, function(err) {
+                if (err) return done(err);
+                renderScss('./dist/compiled.scss', './dist/compiled.css', done)
+              });
+            });
+          },
+
+          //generate a legacy scss from a template
+          function(done) {
+            renderTemplate('./templates/legacy.ejs', './dist/legacy.scss', legacyData, done);
+          },
+
+          //generate a listing from a template
+          function(done) {
+          renderTemplate('./templates/listing.ejs', './dist/listing.html', data, done);
+        }
+
+        ],
+        done
+      );
+
     })
     .pipe(gulp.dest(FONT_DIR))
   ;
 });
 
 gulp.task('fix--fonts', function() {
-  ttfpatch(__dirname+'/dist/fonts/nibdings.ttf', 0); //fix permission error displayed in IE
+  ttfpatch(FONT_DIR+'/nibdings.ttf', 0); //fix permission error displayed in IE
 });
 
 gulp.task('screenshot', function(cb){

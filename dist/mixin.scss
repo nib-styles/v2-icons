@@ -1,0 +1,174 @@
+
+// === FONT FACE ===
+
+@font-face {
+  font-family: 'nibdings';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./fonts/nibdings.eot');
+  src:
+    url('./fonts/nibdings.eot?#iefix') format('eot'),
+    url('./fonts/nibdings.woff') format('woff'),
+    url('./fonts/nibdings.ttf') format('truetype'),
+    url('./fonts/nibdings.svg#nibdings') format('svg')
+  ;
+}
+
+// === ICON: VARIABLES ===
+
+$v2-icon-sizes: (
+"smallest": 16px,
+"smaller": 24px,
+"small": 32px,
+"medium": 48px,
+"large": 64px,
+"largest": 128px
+);
+
+$v2-icon-colors: (
+"lightgreen": #009623,
+"darkgreen": #0a6d12,
+"lightgrey": #b9b9b9,
+"darkgrey": #444,
+"white": #fff
+);
+
+$v2-icon-glyphs: (
+"calendar": "\E001",
+"close-circle-inverse": "\E002",
+"close-circle": "\E003",
+"close": "\E004",
+"document-inverse": "\E005",
+"document": "\E006",
+"edit": "\E007",
+"envelope": "\E008",
+"help-circle-inverse": "\E009",
+"help-circle": "\E00A",
+"help": "\E00B",
+"info-circle-inverse": "\E00C",
+"info-circle": "\E00D",
+"location": "\E00E",
+"lock-circle-inverse": "\E00F",
+"lock": "\E010",
+"menu": "\E011",
+"pdf-inverse": "\E012",
+"pdf": "\E013",
+"phone": "\E014",
+"plus-circle-inverse": "\E015",
+"plus-circle": "\E016",
+"plus": "\E017",
+"shopping-cart": "\E018",
+"smartphone": "\E019",
+"tick-circle-inverse": "\E01A",
+"tick-circle": "\E01B",
+"tick": "\E01C",
+"warning-inverse": "\E01D",
+"warning": "\E01E",
+"fax": "\E038",
+"couple": "\E04B",
+"family": "\E04C",
+"over-55": "\E04D",
+"single": "\E04E",
+"single-parent-family": "\E04F",
+"ambulance": "\E023",
+"clock": "\E024",
+"dollar-circle-inverse": "\E026",
+"dollar-circle": "\E027",
+"dollar": "\E028",
+"facebook-circle-inverse": "\E029",
+"flag": "\E02A",
+"heartrate": "\E02B",
+"hospital": "\E02C",
+"megaphone": "\E02D",
+"paper-clip": "\E02E",
+"settings": "\E02F",
+"facebook-circle": "\E030",
+"stopwatch": "\E031",
+"switching": "\E032",
+"thumbs-up": "\E033",
+"tools": "\E034",
+"umbrella": "\E035",
+"person": "\E037",
+"facebook": "\E039",
+"google-plus-circle-inverse": "\E03F",
+"google-plus-circle": "\E040",
+"google-plus": "\E041",
+"instagram-circle-inverse": "\E042",
+"instagram-circle": "\E043",
+"instagram": "\E044",
+"twitter-circle-inverse": "\E045",
+"twitter-circle": "\E046",
+"twitter": "\E047",
+"youtube-circle-inverse": "\E048",
+"youtube-circle": "\E049",
+"youtube": "\E04A",
+"arrow": "\E01F",
+"chevron-circle-inverse": "\E020",
+"chevron-circle": "\E021",
+"chevron": "\E022",
+"stethoscope": "\E025",
+"spinner": "\E036",
+"receipt": "\E03A",
+"screen": "\E03B",
+"slip": "\E03C",
+"tooth": "\E03D",
+"heart": "\E03E"
+);
+
+@mixin v2-icon($name, $size: null, $color: null, $rotate: 0, $offset-descenders: false, $after: false) {
+
+  $pseudo: if($after, 'after', 'before');
+
+  &:#{$pseudo} {
+
+    font-family: 'nibdings';
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+
+    //glyph
+    @if (map-has-key($v2-icon-glyphs, $name)) {
+      content: map-get($v2-icon-glyphs, $name);
+    } @else {
+      @error 'v2-icon: Icon name "#{$name}" is invalid.';
+    }
+
+    //size
+    @if ($size != null) {
+      @if (map-has-key($v2-icon-sizes, $size)) {
+        font-size: map-get($v2-icon-sizes, $size);
+      } @else {
+        @error 'v2-icon: Icon size "#{$size}" is invalid.';
+      }
+    }
+
+    //color
+    @if ($color != null) {
+      @if (map-has-key($v2-icon-colors, $color)) {
+        color: map-get($v2-icon-colors, $color);
+      } @else {
+        @error 'v2-icon: Icon color "#{$color}" is invalid.';
+      }
+    }
+
+    //rotation
+    @if (type-of($rotate) == 'number') {
+      @if ($rotate != 0) {
+        display: inline-block;
+        transform: rotate(#{$rotate}deg);
+      }
+    } @else {
+      @error 'v2-icon: Icon rotation "#{$rotate}" is invalid.';
+    }
+
+    //offset the vertical alignment by the descender height so the icon still looks centered where `text-transform: uppercase` is applied to the containing div
+    @if($offset-descenders) {
+      margin-top: -0.18em;
+    }
+
+    @content;
+
+  }
+
+}

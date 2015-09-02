@@ -1,0 +1,75 @@
+@import "./mixin";
+
+/* === ICON === */
+
+.<%= className %> {
+  display: inline-block;
+  font: normal normal normal 14px/1 '<%= fontName %>';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+}
+
+/* === ICON: SIZE === */
+
+/* TODO: USE EMs so icons scale if user agent font size larger than normal? */
+
+<% Object.keys(sizes).forEach(function(name) { %>
+.<%= className %>--<%= name %> {
+  font-size: <%= sizes[name] %>px;
+}
+<% }) %>
+
+/* === ICON: COLOUR === */
+
+<% Object.keys(colors).forEach(function(name) { %>
+.<%= className %>--<%= name %> {
+  color: <%= colors[name] %>;
+}
+<% }) %>
+
+/* === ICON: ROTATION === */
+
+.<%= className %>--rotate-90 {
+  transform: rotate(90deg);
+}
+
+.<%= className %>--rotate-180 {
+  transform: rotate(180deg);
+}
+
+.<%= className %>--rotate-270 {
+  transform: rotate(270deg);
+}
+
+/* === ICON: SPIN === */
+
+@keyframes <%= className %>-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.<%= className %>--spin {
+  animation: <%= className %>-spin 0.75s infinite linear;
+}
+
+/* === ICON: ALIGNMENT === */
+
+/* offset the vertical alignment by the descender height so the icon still looks centered where `text-transform: uppercase` is applied to the containing div */
+.<%= className %>--offset-descenders {
+  margin-top: -0.18em;
+}
+
+/* === ICON: GLYPH === */
+
+<% Object.keys(glyphs).forEach(function(name) { %>
+.<%= className %>--<%= name %>:before {
+  content: <%- glyphs[name] %>
+}
+<% }); %>
