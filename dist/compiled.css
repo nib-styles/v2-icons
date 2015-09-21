@@ -314,5 +314,8 @@
 .v2-icon--heart:before {
   content: "\E03E"; }
 
-.v2-icon--gift:before {
+.v2-icon--flag-circle-inverse:before {
   content: "\EA01"; }
+
+.v2-icon--group-circle-inverse:before {
+  content: "\EA02"; }
