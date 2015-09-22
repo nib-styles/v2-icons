@@ -8,7 +8,7 @@ See the [pattern library](http://nib-pattern-library.azurewebsites.net/pages/ico
 
 ## Designing a new icon
 
- - When *creating* in Illustrator, ensure your document profile has "Align New Objects to Pixel Grid" option unchecked in the Advanced section
+ - Ensure your document profile has "Align New Objects to Pixel Grid" option unchecked in the Advanced section. NOTE: This will only work when creating a new illustrator document.
  - Your icon *MUST* be a `*.svg`
  - Your icon *MUST* be 64px by 64px
  - Your icon *MUST* be black and white
