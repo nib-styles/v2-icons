@@ -281,6 +281,9 @@
 .v2-icon--youtube:before {
   content: "\E04A"; }
 
+.v2-icon--flag-circle-inverse:before {
+  content: "\EA01"; }
+
 .v2-icon--arrow:before {
   content: "\E01F"; }
 
@@ -313,9 +316,6 @@
 
 .v2-icon--heart:before {
   content: "\E03E"; }
-
-.v2-icon--flag-circle-inverse:before {
-  content: "\EA01"; }
 
 .v2-icon--group-circle-inverse:before {
   content: "\EA02"; }
