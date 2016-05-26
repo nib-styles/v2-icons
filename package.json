@@ -1,21 +1,22 @@
 {
   "name": "@nib-styles/v2-icons",
-  "version": "2.6.2",
+  "version": "2.7.0",
   "main.css": "dist/compiled.scss",
   "devDependencies": {
     "async": "^1.4.2",
+    "consolidate": "^0.13.1",
     "ejs": "^2.3.3",
     "gulp": "^3.9.0",
     "gulp-iconfont": "^4.0.0",
+    "gulp-util": "^3.0.7",
     "iconfont-glyphs-map": "^0.2.1",
     "mkdirp": "^0.5.1",
+    "node-sass": "^3.2.0",
     "nodettfpatch": "^1.0.0",
     "open": "^0.0.5",
     "pageres": "^2.1.0",
     "rimraf": "^2.4.2",
-    "run-sequence": "^1.1.2",
-    "consolidate": "^0.13.1",
-    "node-sass": "^3.2.0"
+    "run-sequence": "^1.1.2"
   },
   "repository": {
     "type": "git",
