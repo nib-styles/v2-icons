@@ -129,8 +129,13 @@ gulp.task('build--fonts', function(done) {
 
           //generate a listing from a template
           function(done) {
-          renderTemplate('./templates/listing.ejs', './dist/listing.html', data, done);
-        }
+            renderTemplate('./templates/listing.ejs', './dist/listing.html', data, done);
+          },
+
+          //generate metadata
+          function(done) {
+            renderTemplate('./templates/metadata.ejs', './dist/metadata.js', data, done);
+          }
 
         ],
         done

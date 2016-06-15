@@ -3,7 +3,7 @@
 Icon font for nib.
 
     <i class="v2-icon v2-icon--small v2-icon--lightgrey v2-icon--calendar"></i>
-    
+
 See the [pattern library](http://nib-pattern-library.azurewebsites.net/pages/iconography.html) for a full list of available icons.
 
 ## Designing a new icon
@@ -20,7 +20,7 @@ See the [pattern library](http://nib-pattern-library.azurewebsites.net/pages/ico
  - name the icon after what the image is, not what the function is
  - if the icon is in a circle, use the suffix `-circle`
  - if the icon is white on black, use the suffix `-inverse`
- 
+
 ## Adding a new icon
 
 <span style="color:red;">
@@ -45,7 +45,7 @@ The above rules were chosen in order to meet the following use cases:
 
 ![Icon in a button](doc/use-case-btn.png?raw=true)
 
-Where the center of an icon should be in line with the center of some text e.g. an icon in a button. For this to look good icons must be vertically centered or make use of the full height. Icons that are vertically centered will look smaller than those that 
+Where the center of an icon should be in line with the center of some text e.g. an icon in a button. For this to look good icons must be vertically centered or make use of the full height. Icons that are vertically centered will look smaller than those that
 
 ### Horizontal list
 
@@ -56,3 +56,9 @@ Where a number of icons are aligned to the top or bottom of a container e.g. a f
 ### Vertical list
 
 Where a number of icons are aligned to the left or right of a container. For this to look good icons must be horizontally centered or make use of the full width.
+
+## Change log
+
+### 2.8.0
+
+- add: added `./dist/metadata.js`: generated metadata for use in JS
