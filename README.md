@@ -4,7 +4,7 @@ Icon font for nib.
 
     <i class="v2-icon v2-icon--small v2-icon--lightgrey v2-icon--calendar"></i>
 
-See the [pattern library](http://nib-pattern-library.azurewebsites.net/pages/iconography.html) for a full list of available icons.
+See the [pattern library](https://design.nib.com.au/language/master/#/atom/icon) for a full list of available icons.
 
 ## Designing a new icon
 
