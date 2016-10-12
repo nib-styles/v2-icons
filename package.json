@@ -1,6 +1,6 @@
 {
   "name": "@nib-styles/v2-icons",
-  "version": "2.9.1",
+  "version": "2.10.0",
   "main.css": "dist/compiled.scss",
   "devDependencies": {
     "async": "^1.4.2",
