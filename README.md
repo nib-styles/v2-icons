@@ -59,6 +59,12 @@ Where a number of icons are aligned to the left or right of a container. For thi
 
 ## Change log
 
+### 2.9.0
+
+- add: records icon
+- add: PDF icon
+- add: certificate icon
+
 ### 2.8.0
 
 - add: added `./dist/metadata.js`: generated metadata for use in JS
