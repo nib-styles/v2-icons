@@ -331,3 +331,9 @@
 
 .v2-icon--trashcan:before {
   content: "\EA06"; }
+
+.v2-icon--certificate:before {
+  content: "\EA07"; }
+
+.v2-icon--records-layered:before {
+  content: "\EA10"; }
