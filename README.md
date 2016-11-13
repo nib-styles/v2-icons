@@ -59,9 +59,8 @@ Where a number of icons are aligned to the left or right of a container. For thi
 
 ## Change log
 
-### 2.9.0
+### 2.11.0
 
-- add: records icon
 - add: PDF icon
 - add: certificate icon
 
