@@ -118,7 +118,9 @@ $v2-icon-glyphs: (
 "heart": "\E03E",
 "group-circle-inverse": "\EA03",
 "magnifying-glass": "\EA05",
-"trashcan": "\EA06"
+"trashcan": "\EA06",
+"certificate": "\EA07",
+"records-layered": "\EA10"
 );
 
 @mixin v2-icon($name, $size: null, $color: null, $rotate: 0, $offset-descenders: false, $after: false) {
