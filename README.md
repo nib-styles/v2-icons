@@ -59,6 +59,10 @@ Where a number of icons are aligned to the left or right of a container. For thi
 
 ## Change log
 
+### 2.12.1
+
+- add: credit-card icon
+
 ### 2.11.0
 
 - add: PDF icon
