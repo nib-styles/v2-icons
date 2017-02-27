@@ -59,6 +59,11 @@ Where a number of icons are aligned to the left or right of a container. For thi
 
 ## Change log
 
+### 3.0.0
+
+- move `font-family` to its own mixin so its not repeated in CSS each time the mixins are `@import`ed
+- change the `sass-composer` main file to the `mixins.scss` rather than `compiled.scss`
+
 ### 2.12.1
 
 - add: credit-card icon

@@ -1,19 +1,3 @@
-
-// === FONT FACE ===
-
-@font-face {
-  font-family: 'nibdings';
-  font-weight: normal;
-  font-style: normal;
-  src: url('./fonts/nibdings.eot');
-  src:
-    url('./fonts/nibdings.eot?#iefix') format('eot'),
-    url('./fonts/nibdings.woff') format('woff'),
-    url('./fonts/nibdings.ttf') format('truetype'),
-    url('./fonts/nibdings.svg#nibdings') format('svg')
-  ;
-}
-
 // === ICON: VARIABLES ===
 
 $v2-icon-sizes: (
@@ -123,6 +107,26 @@ $v2-icon-glyphs: (
 "credit-card": "\EA08",
 "records-layered": "\EA10"
 );
+
+
+// === MIXINS ===
+
+@mixin icon-font-face() {
+
+  @font-face {
+    font-family: 'nibdings';
+    font-weight: normal;
+    font-style: normal;
+      src: url('./fonts/nibdings.eot');
+      src:
+        url('./fonts/nibdings.eot?#iefix') format('eot'),
+        url('./fonts/nibdings.woff') format('woff'),
+        url('./fonts/nibdings.ttf') format('truetype'),
+        url('./fonts/nibdings.svg#nibdings') format('svg')
+    ;
+  }
+
+}
 
 @mixin v2-icon($name, $size: null, $color: null, $rotate: 0, $offset-descenders: false, $after: false) {
 
