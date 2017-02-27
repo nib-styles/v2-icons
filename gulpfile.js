@@ -85,7 +85,7 @@ gulp.task('build--fonts', function(done) {
       var colorMap = {
         lightgreen:   '#009623',
         darkgreen:    '#0a6d12',
-        lightgrey:    '#b9b9b9',
+        lightgrey:    '#ccc',
         darkgrey:     '#444',
         white:        '#fff'
       };
