@@ -63,6 +63,8 @@ Where a number of icons are aligned to the left or right of a container. For thi
 
 - move `font-family` to its own mixin so its not repeated in CSS each time the mixins are `@import`ed
 - change the `sass-composer` main file to the `mixins.scss` rather than `compiled.scss`
+- fix `lightgrey` color to be standard https://github.com/nib-styles/v2-icons/issues/18
+- turn off italics so the icon doesn't look skewed https://github.com/nib-styles/v2-icons/issues/17
 
 ### 2.12.1
 
