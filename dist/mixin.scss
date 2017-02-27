@@ -12,7 +12,7 @@ $v2-icon-sizes: (
 $v2-icon-colors: (
 "lightgreen": #009623,
 "darkgreen": #0a6d12,
-"lightgrey": #b9b9b9,
+"lightgrey": #ccc,
 "darkgrey": #444,
 "white": #fff
 );
@@ -134,6 +134,7 @@ $v2-icon-glyphs: (
 
   &:#{$pseudo} {
 
+    font-style: normal;
     font-family: 'nibdings';
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
