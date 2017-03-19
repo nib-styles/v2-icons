@@ -59,6 +59,9 @@ Where a number of icons are aligned to the left or right of a container. For thi
 
 ## Change log
 
+### 3.1.0
+- Added travel bag icon
+
 ### 3.0.0
 
 - move `font-family` to its own mixin so its not repeated in CSS each time the mixins are `@import`ed
