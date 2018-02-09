@@ -58,6 +58,9 @@ Where a number of icons are aligned to the top or bottom of a container e.g. a f
 Where a number of icons are aligned to the left or right of a container. For this to look good icons must be horizontally centered or make use of the full width.
 
 ## Change log
+### 3.2.0
+- Added receipt with tick
+- Added receipt with inverse plus
 
 ### 3.1.0
 - Added travel bag icon
