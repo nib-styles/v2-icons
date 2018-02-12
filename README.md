@@ -37,6 +37,10 @@ Run the build script:
 
     gulp
 
+### Test
+
+Open the `dist/listing.html` file.  It will take a while to load. 
+
 ## Use cases
 
 The above rules were chosen in order to meet the following use cases:
@@ -59,6 +63,8 @@ Where a number of icons are aligned to the left or right of a container. For thi
 
 ## Change log
 
+### 3.2.0
+- Added Clipboard and Receipt with inverse tick icons. 
 ### 3.1.0
 - Added travel bag icon
 
