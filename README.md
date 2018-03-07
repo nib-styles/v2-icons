@@ -64,13 +64,13 @@ Where a number of icons are aligned to the left or right of a container. For thi
 ## Change log
 
 ### 3.3.0
-- Added `hospital-building` icon. 
+- Add: `hospital-building` and `paper-plane` icons
 
 ### 3.2.0
-- Added Clipboard and Receipt with inverse tick icons. 
+- Add: `clipboard` and `receipt-with-inverse-plus` icons
 
 ### 3.1.0
-- Added travel bag icon
+- Add: `travel-bag` icon
 
 ### 3.0.0
 
@@ -81,13 +81,13 @@ Where a number of icons are aligned to the left or right of a container. For thi
 
 ### 2.12.1
 
-- add: credit-card icon
+- Add: `credit-card` icon
 
 ### 2.11.0
 
-- add: PDF icon
-- add: certificate icon
+- Add: PDF icon
+- Add: certificate icon
 
 ### 2.8.0
 
-- add: added `./dist/metadata.js`: generated metadata for use in JS
+- Add: added `./dist/metadata.js`: generated metadata for use in JS
