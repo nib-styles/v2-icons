@@ -63,6 +63,9 @@ Where a number of icons are aligned to the left or right of a container. For thi
 
 ## Change log
 
+### 3.4.0
+- Add: `glasses`, `smiley` and `arm-around-shoulder` icons
+
 ### 3.3.0
 - Add: `hospital-building` and `paper-plane` icons
 

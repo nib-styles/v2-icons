@@ -350,8 +350,17 @@
 .v2-icon--hospital-building:before {
   content: "\EA0C"; }
 
+.v2-icon--paper-plane:before {
+  content: "\EA0D"; }
+
+.v2-icon--arm-around-shoulder:before {
+  content: "\EA0E"; }
+
 .v2-icon--records-layered:before {
   content: "\EA10"; }
 
-.v2-icon--paper-plane:before {
-  content: "\EA0D"; }
+.v2-icon--smiley:before {
+  content: "\EA11"; }
+
+.v2-icon--glasses:before {
+  content: "\EA0F"; }
