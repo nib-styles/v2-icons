@@ -63,6 +63,9 @@ Where a number of icons are aligned to the left or right of a container. For thi
 
 ## Change log
 
+### 3.4.1
+- Add: Font-display to @font-face to make text visible while the font is loading
+
 ### 3.4.0
 - Add: `glasses`, `smiley` and `arm-around-shoulder` icons
 
